@@ -1,0 +1,26 @@
+﻿import { locales } from '@/i18n';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Kaynar Law Firm | Kaynar Hukuk Bürosu',
+    template: '%s | Kaynar Law Firm'
+  },
+  description: 'Professional legal services in criminal, family, labor and commercial law.',
+  robots: {
+    index: true,
+    follow: true
+  }
+};
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default function RootLayout({
+  children
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}

@@ -1,0 +1,1103 @@
+{
+  "nav": {
+    "about": "Hakkımızda",
+    "practiceAreas": "Çalışma Alanları",
+    "team": "Ekibimiz",
+    "news": "Aktüel",
+    "articles": "Makaleler",
+    "contact": "İletişim",
+    "appointment": "Randevu Al",
+    "menuToggle": "Menüyü aç/kapat",
+    "brandSubtitle": "Avukatlık Bürosu"
+  },
+  "hero": {
+    "title": "Hakkınızı, usule uygun ve kararlılıkla savunuyoruz.",
+    "subtitle": "Ceza, aile, iş ve ticaret hukukunda uçtan uca temsil. Hızlı ilk değerlendirme ve şeffaf süreç.",
+    "ctaAppointment": "Randevu Al",
+    "ctaCall": "Hemen Ara"
+  },
+  "about": {
+    "label": "Hakkımızda",
+    "title": "Profesyonel Hukuki Danışmanlık",
+    "description": "Müvekkillerimize en iyi hukuki hizmeti sunmak için çalışıyoruz.",
+    "paragraphs": [
+      "Kaynar Hukuk Bürosu olarak, ceza, aile, iş ve ticaret hukukunda dava ve danışmanlık hizmetleri sunuyoruz. Her dosyayı özgün ihtiyaçlarına göre değerlendirir, mevzuat değişikliklerini yakından takip ederiz.",
+      "Müvekkillerimize gerçekçi beklentiler sunmayı, süreci şeffaf biçimde yönetmeyi ve her aşamada bilgilendirme yapmayı ilke edindik."
+    ],
+    "values": {
+      "integrity": {
+        "title": "Dürüst Danışmanlık",
+        "description": "Gerçekçi beklentiler belirler, olası riskleri şeffaf biçimde aktarırız."
+      },
+      "discipline": {
+        "title": "Disiplinli Takip",
+        "description": "Süreçleri sistematik izler, her aşamada müvekkili bilgilendiririz."
+      },
+      "compliance": {
+        "title": "Mevzuata Uyum",
+        "description": "Meslek kurallarına ve hukuk normlarına tam uyum gösteririz."
+      }
+    },
+    "imageAlt": "Kaynar Hukuk Ofisi",
+    "pageHeading": "Hukuki süreçlerinizi güvenle yönetiyoruz",
+    "principles": [
+      "Dosyaları mevzuat ve yargı içtihatları ışığında değerlendirerek strateji belirleriz.",
+      "Bilgi güvenliğini gözetir, kişisel verileri KVKK hükümlerine uygun şekilde işleriz.",
+      "İletişimde açık ve ölçülü bir dil kullanır, süreci düzenli aralıklarla güncelleriz.",
+      "Çıkar çatışması ihtimallerini önceden tarar ve mesleki bağımsızlığı koruruz."
+    ],
+    "valuesSection": {
+      "title": "Değerlerimiz",
+      "description": "Yasal düzenlemelere uyum, sistematik çalışma ve bilgilendirme yaklaşımı temel değerlerimizdir. Süreçlerin her aşamasında somut veriler üzerinden değerlendirme yapar, öngörülemeyen sonuçlara dair garanti vermez ve değişkenlikleri net şekilde açıklarız."
+    },
+    "contactSection": {
+      "title": "İletişim Bilgileri"
+    },
+    "principlesTitle": "Çalışma İlkeleri"
+  },
+  "practiceAreas": {
+    "label": "Çalışma Alanlarımız",
+    "title": "Uzmanlık Alanları",
+    "description": "Geniş yelpazede hukuki destek sağlıyoruz",
+    "viewAll": "Tümünü Gör",
+    "criminal": "Ceza Hukuku",
+    "criminalDesc": "Suç ve ceza davalarında temsil",
+    "family": "Aile Hukuku",
+    "familyDesc": "Boşanma, velayet ve nafaka davaları",
+    "labor": "İş Hukuku",
+    "laborDesc": "İşçi ve işveren haklarının korunması",
+    "commercial": "Ticaret Hukuku",
+    "commercialDesc": "Şirket ve ticari işlemlerde danışmanlık",
+    "administrative": "İdari Hukuk",
+    "administrativeDesc": "Kamu kurumlarına karşı davalar",
+    "real_estate": "Gayrimenkul Hukuku",
+    "real_estateDesc": "Taşınmaz alım-satım ve kira işlemleri",
+    "intellectual": "Fikri Mülkiyet Hukuku",
+    "intellectualDesc": "Patent, marka ve telif hakları",
+    "banking": "Bankacılık Hukuku",
+    "bankingDesc": "Banka ve finans işlemleri",
+    "inheritance": "Miras Hukuku",
+    "inheritanceDesc": "Miras paylaşımı ve veraset işlemleri",
+    "items": {
+      "criminal": {
+        "title": "Ceza Hukuku",
+        "description": "Soruşturma ve kovuşturma aşamalarında müdafi desteği, temyiz ve itiraz süreçleri."
+      },
+      "family": {
+        "title": "Aile Hukuku",
+        "description": "Boşanma, velayet, nafaka ve mal paylaşımı süreçlerinde temsil."
+      },
+      "labor": {
+        "title": "İş Hukuku",
+        "description": "İşçi ve işveren haklarının korunması, kıdem ve ihbar tazminatı davaları."
+      },
+      "commercial": {
+        "title": "Ticaret Hukuku",
+        "description": "Şirket kuruluşu, sözleşmeler, ticari uyuşmazlıklar ve icra takibi."
+      },
+      "enforcement": {
+        "title": "İcra ve İflas Hukuku",
+        "description": "Alacak tahsilatı, haciz işlemleri ve iflas süreçlerinde hukuki destek."
+      },
+      "administrative": {
+        "title": "İdare Hukuku",
+        "description": "İptal ve tam yargı davaları, idari işlemlere karşı başvurular."
+      },
+      "real_estate": {
+        "title": "Gayrimenkul Hukuku",
+        "description": "Tapu işlemleri, kira sözleşmeleri, kat mülkiyeti ve tahliye davaları."
+      },
+      "contracts": {
+        "title": "Sözleşmeler Hukuku",
+        "description": "Sözleşmelerin hazırlanması, müzakeresi ve uyuşmazlık çözümü."
+      },
+      "international": {
+        "title": "Yabancılar ve Tahkim Hukuku",
+        "description": "Uluslararası uyuşmazlıklar, tahkim ve yabancı yatırım danışmanlığı."
+      }
+    }
+  },
+  "team": {
+    "label": "Ekibimiz",
+    "title": "Avukatlarımız",
+    "description": "Deneyimli ve uzman kadromuzla hizmetinizdeyiz",
+    "moreCount": "+{count} daha",
+    "card": {
+      "role": "Avukat",
+      "specialties": "Uzmanlık Alanları",
+      "about": "Hakkında",
+      "contact": "İletişim"
+    }
+  },
+  "testimonials": {
+    "label": "Referanslar",
+    "title": "Müvekkil Görüşleri",
+    "description": "Hizmetlerimizden memnun kalan müvekkillerimiz",
+    "items": [
+      {
+        "quote": "Süreci baştan sona açıkça anlattılar ve her adımda bilgilendirdiler. Profesyonel yaklaşımları sayesinde süreç sorunsuz ilerliyor.",
+        "author": "M.B.",
+        "location": "İstanbul"
+      },
+      {
+        "quote": "Gerçekçi beklentiler belirlediler, olası riskleri şeffaf bir şekilde aktardılar. Bu dürüstlük çok değerliydi.",
+        "author": "E.K.",
+        "location": "Ankara"
+      },
+      {
+        "quote": "Hukuki konulardaki bilgi birikimleri ve titiz çalışmaları takdire şayan. Kendilerini gönül rahatlığıyla tavsiye edebilirim.",
+        "author": "S.Y.",
+        "location": "İzmir"
+      }
+    ]
+  },
+  "contact": {
+    "label": "İletişim",
+    "title": "Bizimle iletişime geçin",
+    "description": "Hukuki danışmanlık ve randevu talepleriniz için bize ulaşabilirsiniz.",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "emailPlaceholder": "ornek@email.com",
+      "phonePlaceholder": "+90 555 123 45 67",
+      "subjectPlaceholder": "Hangi konuda yardım istiyorsunuz?",
+      "messagePlaceholder": "Lütfen durumunuzu kısaca açıklayın...",
+      "kvkkConsent": "'ni okudum ve kişisel verilerimin işlenmesini kabul ediyorum.",
+      "kvkkLink": "KVKK Aydınlatma Metni",
+      "newsletter": "Bülten ve duyuru almak istiyorum.",
+      "submit": "Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
+      "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+      "required": "*"
+    },
+    "info": {
+      "address": "Adres",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "whatsapp": "WhatsApp ile İletişim",
+      "whatsappDesc": "Hızlı destek için tıklayın"
+    },
+    "addressText": "Örnek Mahallesi, Hukuk Sokak No:12",
+    "cityText": "Kadıköy, İstanbul 34710",
+    "phoneNumber": "+90 555 123 45 67",
+    "emailAddress": "info@kaynar.com",
+    "note": "Mesajınız gizlilikle ele alınır; bu iletişim avukat-müvekkil ilişkisi kurmaz.",
+    "disclaimer": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir.",
+    "cityShort": "İstanbul, Türkiye",
+    "mapFallback": "Harita yüklenemedi",
+    "kvkkRequired": "KVKK onayı gereklidir.",
+    "whatsappMessage": "Merhaba, hukuki destek almak istiyorum.",
+    "mapTitle": "Kaynar Hukuk Bürosu Konumu"
+  },
+  "news": {
+    "backToList": "Aktüel listesine dön",
+    "source": "Kaynak",
+    "readFull": "Haberin tamamını oku",
+    "tags": "Etiketler",
+    "disclaimer": "Bu haber özet bilgi amaçlıdır. Detaylı ve güncel bilgi için ilgili resmi kaynakları kontrol ediniz."
+  },
+  "articles": {
+    "backToList": "Makaleler listesine dön",
+    "disclaimer": "Genel bilgilendirme, hukuki görüş değildir."
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "readMore": "Devamını Oku",
+    "learnMore": "Daha Fazla",
+    "viewDetails": "Detayları Gör",
+    "close": "Kapat",
+    "back": "Geri",
+    "changeLanguage": "Dili değiştir"
+  },
+  "cookies": {
+    "banner": {
+      "title": "Çerezlere ilişkin bilgilendirme",
+      "description": "Zorunlu çerezler site güvenliği için gereklidir. {statistics} ve {functional} çerezleri için onayınızı isteyebiliriz. Tercihlerinizi dilediğiniz zaman güncelleyebilirsiniz.",
+      "accept": "Kabul Et",
+      "reject": "Reddet",
+      "preferences": "Tercihler"
+    },
+    "preferences": {
+      "title": "Çerez Tercihleri",
+      "description": "Zorunlu çerezler site güvenliği için kullanılır ve devre dışı bırakılmaz. Diğer kategorileri tercihlerinize göre yönetebilirsiniz.",
+      "active": "Aktif",
+      "cancel": "İptal",
+      "save": "Kaydet"
+    },
+    "categories": {
+      "necessary": {
+        "name": "Zorunlu",
+        "description": "Güvenli oturum ve temel site işlevleri için gereken çerezlerdir. Bu çerezler devre dışı bırakılamaz."
+      },
+      "statistics": {
+        "name": "İstatistik",
+        "description": "Site trafiği ve kullanım analizleri için anonim ölçüm sağlayan çerezlerdir. Onayınız olmadan kullanılmaz."
+      },
+      "functional": {
+        "name": "İşlevsel",
+        "description": "Harita gibi üçüncü taraf hizmetleri sunmak için gereken çerezlerdir. Onay vermediğiniz sürece yüklenmezler."
+      }
+    }
+  },
+  "partners": {
+    "label": "İşbirlikleri ve Üyelikler",
+    "items": [
+      "İstanbul Barosu",
+      "Türkiye Barolar Birliği",
+      "Hukuk Araştırmaları Vakfı",
+      "Uluslararası Hukuk Komisyonu",
+      "Ticaret Odası",
+      "Ticaret Borsası",
+      "Hukukçular Derneği",
+      "Adalet Akademisi"
+    ]
+  },
+  "footer": {
+    "disclaimer": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir.",
+    "cookiePreferences": "Çerez Tercihleri",
+    "secondaryNotice": "Bu site bilgilendirme amaçlıdır; hukuki danışmanlık değildir.",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta",
+    "linksAria": "Alt menü",
+    "copyright": "© {year} Kaynar Hukuk Bürosu."
+  },
+  "filters": {
+    "date": {
+      "label": "Tarih",
+      "groupLabel": "Tarih filtreleri",
+      "ranges": {
+        "today": "Bugün",
+        "last7": "Son 7 Gün",
+        "thisMonth": "Bu Ay",
+        "thisYear": "Bu Yıl",
+        "custom": "Özel Aralık…"
+      },
+      "custom": {
+        "ariaLabel": "Özel tarih aralığı seçin",
+        "title": "Özel Tarih Aralığı",
+        "startLabel": "Başlangıç Tarihi",
+        "endLabel": "Bitiş Tarihi",
+        "cancel": "İptal",
+        "apply": "Uygula",
+        "close": "Kapat",
+        "placeholder": "gg.aa.yyyy",
+        "helpText": "Tarih formatı: gg.aa.yyyy (örnek: 01.10.2025)",
+        "errors": {
+          "invalidFormat": "Geçersiz tarih formatı. Örnek: 01.10.2025",
+          "required": "Başlangıç ve bitiş tarihi gerekli",
+          "endBeforeStart": "Bitiş tarihi başlangıçtan önce olamaz"
+        }
+      }
+    },
+    "sort": {
+      "aria": "Sıralama: {direction}",
+      "desc": "Yeni → Eski",
+      "asc": "Eski → Yeni"
+    },
+    "reset": {
+      "label": "Sıfırla",
+      "aria": "Tüm filtreleri sıfırla"
+    },
+    "active": {
+      "title": "Aktif Filtreler ({count})",
+      "clearAll": "Tümünü Temizle",
+      "remove": "{label} filtresini kaldır"
+    },
+    "categories": {
+      "title": "Hukuk Alanları",
+      "showMore": "Daha Fazla ({count})",
+      "showMoreAria": "{count} hukuk alanı daha göster",
+      "dialogTitle": "Tüm Hukuk Alanları",
+      "dialogAria": "Tüm hukuk alanları",
+      "searchPlaceholder": "Ara...",
+      "empty": "Sonuç bulunamadı",
+      "apply": "Uygula",
+      "close": "Kapat"
+    },
+    "advanced": {
+      "toggle": "Gelişmiş",
+      "toggleAria": "Gelişmiş filtreleri aç veya kapat",
+      "panelAria": "Gelişmiş filtreler paneli",
+      "search": {
+        "label": "Arama",
+        "placeholder": "Başlık, özet veya etiketlerde ara..."
+      },
+      "types": {
+        "heading": "İçerik Türü"
+      },
+      "sources": {
+        "heading": "Kaynak"
+      }
+    }
+  },
+  "pages": {
+    "practiceAreas": {
+      "title": "Çalışma Alanlarımız",
+      "subtitle": "Uzmanlığımızı keşfedin",
+      "intro": [
+        "Her çalışma alanında mevzuata uygun, ölçülü ve bilgilendirici bir yaklaşım benimsiyoruz.",
+        "Uzmanlık alanlarımızda dava ve danışmanlık hizmetleri sunuyoruz."
+      ],
+      "disclaimer": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir."
+    },
+    "articles": {
+      "metadata": {
+        "title": "Makaleler",
+        "description": "Hukuk alanlarına göre filtrelenebilir makaleler."
+      },
+      "list": {
+        "heading": "Makaleler",
+        "subtitle": "Uzmanlarımızdan güncel değerlendirmeler",
+        "description": "Hukuk makalelerimizi tarih ve alanlara göre filtreleyin.",
+        "results": "{count} sonuç bulundu"
+      },
+      "empty": {
+        "title": "Sonuç bulunamadı",
+        "description": "Farklı filtreler deneyerek arama yapabilirsiniz."
+      },
+      "detail": {
+        "back": "Makaleler listesine dön",
+        "disclaimer": "Genel bilgilendirme, hukuki görüş değildir.",
+        "generalNotice": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir.",
+        "notFoundTitle": "Makale bulunamadı"
+      }
+    },
+    "team": {
+      "metaTitle": "Ekibimiz",
+      "metaDescription": "Kaynar Hukuk Bürosu avukat ve ekip üyeleri.",
+      "heading": "Ekibimiz",
+      "subtitle": "Uzmanlık alanları ve eğitim bilgileriyle ekibimizi tanıyın."
+    },
+    "about": {
+      "metaTitle": "Hakkımızda",
+      "metaDescription": "Kaynar Hukuk Bürosu, müvekkillerin hukuki süreçlerini şeffaflık ve özenle yönetmek için çalışan bir ekiptir.",
+      "heading": "Hakkımızda",
+      "summary": "Kuruluşumuzdan bu yana ceza, aile, ticaret ve iş hukukunda dava ve danışmanlık hizmetleri sunuyoruz."
+    },
+    "faq": {
+      "metaTitle": "Sık Sorulan Sorular",
+      "metaDescription": "Kaynar Hukuk Bürosu ile ilgili sık sorulan sorular ve genel bilgilendirmeler.",
+      "heading": "Sık Sorulan Sorular",
+      "description": "Aşağıdaki bilgiler genel nitelikte olup her dosya kendi koşullarına göre değerlendirilmelidir.",
+      "items": [
+        {
+          "question": "Vekâletname nasıl çıkarılır?",
+          "answer": "Noterden düzenlenmiş vekâletname gerekir. İçeriği, temsil edilecek hukuki süreçlere göre belirlenir ve kimlik/pasaport gibi belgelerle işlemler tamamlanır."
+        },
+        {
+          "question": "Duruşma tarihini nasıl öğrenebilirim?",
+          "answer": "Mahkeme kalemi, UYAP Vatandaş Portalı veya avukatınız üzerinden duruşma tarihini ve saatini öğrenebilirsiniz. Değişiklikler için dosyanın takip edilmesi önemlidir."
+        },
+        {
+          "question": "Tebligat ve süreler nasıl işler?",
+          "answer": "Tebligat Kanunu ve ilgili yönetmelikler uygulanır. Tebligatın usulüne uygun yapıldığı tarih çoğu süre için başlangıç kabul edilir ve mevzuata göre süreler değişebilir."
+        },
+        {
+          "question": "UYAP üzerinden dosya görüntüleme mümkün müdür?",
+          "answer": "Taraf sıfatına sahip kişiler UYAP Vatandaş Portalı üzerinden dosya belgelerinin bir kısmını görebilir. Gizlilik kararı bulunan dosyalarda erişim kısıtlanabilir."
+        }
+      ]
+    },
+    "kvkk": {
+      "aydinlatma": {
+        "metaTitle": "Kişisel Verilerin Korunması Aydınlatma Metni",
+        "metaDescription": "Kaynar Hukuk Bürosu tarafından kişisel verilerin işlenmesine ilişkin bilgilendirme.",
+        "title": "Kişisel Verilerin Korunması Aydınlatma Metni",
+        "description": "Kaynar Hukuk Bürosu olarak, 6698 sayılı KVKK uyarınca kişisel verilerinizin güvenliğini önemsiyoruz. Aşağıda internet sitemizi ziyaret edenler, iletişim formunu kullananlar ve iş başvurusu yapanlar için bilgilendirme yer almaktadır.",
+        "sections": [
+          {
+            "title": "1. Veri Sorumlusu",
+            "body": [
+              "Veri sorumlusu: Kaynar Hukuk Bürosu. İletişim: info@kaynar.av.tr, +90-___-___-____. Adres: ___ Mah., ___ Sk. No: __, ___ / ___."
+            ]
+          },
+          {
+            "title": "2. Ziyaretçi Verileri",
+            "body": [
+              "İnternet sitesi ziyaretçilerinden aşağıdaki veriler işlenebilir:"
+            ],
+            "list": [
+              "IP adresi, tarayıcı bilgileri ve günlük kayıtları.",
+              "Çerez tercihleri ve oturum bilgileri."
+            ],
+            "note": "Amaçlar: Site güvenliğinin sağlanması, performans ölçümü ve tercih yönetimi. Hukuki sebepler: 5651 sayılı Kanun, meşru menfaat, açık rıza (istatistik/işlevsel çerezler)."
+          },
+          {
+            "title": "3. İletişim Formu Verileri",
+            "body": [
+              "Form aracılığıyla iletilen ad, soyad, telefon, e-posta ve mesaj içeriği yalnız talebinize dönüş yapmak amacıyla işlenir.",
+              "Hukuki sebepler: Avukatlık Kanunu, KVKK m.5/2-c (sözleşmenin kurulması veya ifası) ve m.5/2-f (meşru menfaat). Gerekirse açık rıza alınır. Veriler sistemlerimizde şifreli olarak saklanır ve üçüncü kişilerle paylaşılmaz."
+            ]
+          },
+          {
+            "title": "4. İş Başvurusu Verileri",
+            "body": [
+              "Özgeçmiş ve başvuru belgeleri, değerlendirme süresi boyunca saklanır. Rıza çerçevesinde paylaşılmış veriler haricen üçüncü kişilerle paylaşılmaz."
+            ]
+          },
+          {
+            "title": "5. Saklama Süresi ve Aktarımlar",
+            "body": [
+              "Ziyaretçi kayıtları 5651 sayılı Kanun kapsamında 2 yıl, iletişim talep kayıtları makul cevap süresi + 3 yıl, iş başvurusu kayıtları ise en fazla 2 yıl saklanır. Yasal zorunluluk bulunmadıkça yurtdışına aktarım yapılmaz."
+            ]
+          },
+          {
+            "title": "6. İlgili Kişi Hakları",
+            "body": [
+              "KVKK m.11 kapsamında veri işlenip işlenmediğini öğrenme, veriye erişim, düzeltme, silme ve itiraz haklarınız bulunmaktadır. Başvurularınızı Veri Sahibi Başvurusu sayfasındaki yöntemlerle iletebilirsiniz. Başvurularınız en geç 30 gün içinde yanıtlanacaktır."
+            ]
+          },
+          {
+            "title": "7. Güncellemeler",
+            "body": [
+              "Bu metin gerektiğinde güncellenebilir. Güncel sürüme {siteUrl}/kvkk/aydinlatma adresinden ulaşabilirsiniz."
+            ]
+          }
+        ]
+      },
+      "cerezPolitikasi": {
+        "metaTitle": "Çerez Politikası",
+        "metaDescription": "Kaynar Hukuk Bürosu internet sitesinde kullanılan çerez kategorileri ve yönetim yöntemleri.",
+        "title": "Çerez Politikası",
+        "description": "Kaynar Hukuk Bürosu internet sitesinde kullanılan çerez kategorileri, amaçları ve yönetim yöntemleri aşağıda açıklanmaktadır.",
+        "sections": [
+          {
+            "title": "1. Çerez Nedir?",
+            "body": [
+              "Çerezler, ziyaret ettiğiniz internet siteleri tarafından tarayıcıya kaydedilen küçük metin dosyalarıdır. Site performansını iyileştirmek, güvenlik sağlamak ve tercihlerinizi hatırlamak için kullanılabilirler."
+            ]
+          },
+          {
+            "title": "2. Kullanılan Çerez Kategorileri",
+            "body": [
+              "Sitemizde aşağıdaki çerez kategorileri kullanılmaktadır:"
+            ],
+            "list": [
+              "Zorunlu Çerezler: Güvenli oturum ve temel site işlevleri için gereklidir. Devre dışı bırakılamazlar.",
+              "İstatistik Çerezleri: Site trafiği ve kullanım analizleri için anonim ölçüm sağlar. Varsayılan: Kapalı. Onay vermediğiniz sürece yüklenmez.",
+              "İşlevsel Çerezler: Harita gibi üçüncü taraf hizmetleri sunabilmek için kullanılır. Varsayılan: Kapalı. Onay verdikten sonra etkinleşir."
+            ]
+          },
+          {
+            "title": "3. Yönetim",
+            "body": [
+              "İlk ziyaretinizde çerez tercihlerinizi seçebilirsiniz. Daha sonra sayfanın altındaki “Çerez Tercihleri” bağlantısından tercihlerinizi değiştirebilir veya tarayıcı ayarlarınız üzerinden çerezleri engelleyip silebilirsiniz."
+            ]
+          },
+          {
+            "title": "4. Saklama Süresi",
+            "body": [
+              "Çerez tercih kayıtları, seçiminizden itibaren 12 ay boyunca saklanır ve süre sonunda tekrar onayınız istenir."
+            ]
+          },
+          {
+            "title": "5. Güncellemeler",
+            "body": [
+              "Çerez politikası yasal veya teknik zorunluluklar nedeniyle güncellenebilir. Güncellemeler internet sitemizde yayımlandığı tarihten itibaren geçerlidir."
+            ]
+          }
+        ]
+      },
+      "veriSahibiBasvuru": {
+        "metaTitle": "Veri Sahibi Başvuru Süreci",
+        "metaDescription": "KVKK uyarınca veri sahibi başvurularının usul ve yöntemleri.",
+        "title": "Veri Sahibi Başvuru Süreci",
+        "description": "6698 sayılı KVKK uyarınca ilgili kişi sıfatına sahip kişiler, kişisel verilerinin işlenmesine ilişkin taleplerini aşağıdaki yöntemlerle iletebilir.",
+        "sections": [
+          {
+            "title": "1. Başvuru Yöntemleri",
+            "body": [
+              "Başvurular şu yöntemlerle yapılabilir:"
+            ],
+            "list": [
+              "Islak imzalı dilekçe ile büromuza bizzat başvuru",
+              "Noter aracılığıyla gönderilen başvuru",
+              "Kayıtlı Elektronik Posta (KEP) adresi üzerinden güvenli elektronik imza ile başvuru",
+              "İmzalı başvurunun taranarak info@kaynar.av.tr adresine güvenli elektronik imza ile iletilmesi"
+            ]
+          },
+          {
+            "title": "2. Başvuruda Bulunması Gereken Bilgiler",
+            "body": [
+              "Başvurularınızda aşağıdaki bilgilerin yer alması gerekir:"
+            ],
+            "list": [
+              "Ad, soyad ve imza",
+              "T.C. kimlik numarası veya pasaport numarası",
+              "Tebligata esas yerleşim yeri veya işyeri adresi",
+              "Varsa bildirime esas e-posta adresi, telefon ve faks",
+              "Talep konusu ile destekleyici bilgi ve belgeler"
+            ]
+          },
+          {
+            "title": "3. Yanıt Süresi",
+            "body": [
+              "Başvurular KVKK m.13 uyarınca en geç 30 gün içinde sonuçlandırılır. Talebin niteliğine göre ek bilgi talep edilebilir. Ücretlendirme, KVKK ve Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ hükümlerine göre yapılır."
+            ]
+          },
+          {
+            "title": "4. Başvurunun Reddedilmesi",
+            "body": [
+              "Başvurunun reddedilmesi halinde gerekçeli yanıt yazılı olarak veya elektronik ortamda iletilir. Yanıt tarihinden itibaren 30 gün içinde Kişisel Verileri Koruma Kurumu'na şikâyet hakkı saklıdır."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "practiceAreaDetails": {
+    "common": {
+      "backToList": "Çalışma Alanlarına dön",
+      "scopeTitle": "Hizmet Kapsamı",
+      "processTitle": "Süreç Adımları",
+      "faqTitle": "Sık Sorulan Sorular",
+      "disclaimer": "Bu sayfa genel bilgilendirme amaçlıdır; hukuki görüş değildir. Her dosya kendine özgü koşullara sahip olduğundan, somut durum değerlendirmesi için lütfen bizimle iletişime geçin."
+    },
+    "criminal": {
+      "name": "Ceza Hukuku",
+      "tagline": "Savunma ve müdafilik hizmetleri",
+      "meta": {
+        "title": "Ceza Hukuku",
+        "description": "Ceza yargılamasında hakların korunması için süreçlerin her aşamasında dikkatli planlama ve mevzuata uygun hareket edilmesi gerekir."
+      },
+      "description": [
+        "Ceza yargılamasında hakların korunması için süreçlerin her aşamasında dikkatli planlama ve mevzuata uygun hareket edilmesi gerekir.",
+        "Soruşturma ve kovuşturma aşamalarında müdafilik hizmeti sunuyoruz."
+      ],
+      "scope": [
+        "Soruşturma aşamasında ifade alma ve kolluk işlemlerinin takibi",
+        "Kovuşturma sürecinde savunma stratejisinin oluşturulması",
+        "Tutuklama, adli kontrol ve koruma tedbirlerine ilişkin başvurular",
+        "İstinaf, temyiz ve olağanüstü kanun yolları için değerlendirmeler",
+        "Uzlaşma ve hükmün açıklanmasının geri bırakılması talepleri",
+        "Hapis cezalarının ertelenmesi ve seçenek yaptırımların uygulanması"
+      ],
+      "process": [
+        {
+          "title": "Ön Değerlendirme",
+          "description": "Dosyanın hukuki ve fiili yönden analizi, delillerin değerlendirilmesi"
+        },
+        {
+          "title": "Strateji Belirleme",
+          "description": "Savunma yaklaşımının planlanması, hukuki dayanakların tespiti"
+        },
+        {
+          "title": "Duruşma Süreci",
+          "description": "Duruşmalarda temsil, tanık ve bilirkişi sorguları, delillerin sunumu"
+        },
+        {
+          "title": "Karar Değerlendirme",
+          "description": "Mahkeme kararının analizi ve kanun yolu başvurusu planlaması"
+        },
+        {
+          "title": "Takip",
+          "description": "Karar sonrası işlemler, infaz ve uyarlama taleplerinin yönetimi"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Soruşturma aşamasında avukat ne yapar?",
+          "answer": "İfade alımında hazır bulunur, dosyayı inceler ve hakların korunması için gerekli başvuruları yapar. Müvekkil ile sürekli iletişim halinde olur ve sürecin her aşamasında bilgilendirme sağlar."
+        },
+        {
+          "question": "Tutuklamaya itiraz süresi nedir?",
+          "answer": "Ceza Muhakemesi Kanunu'nda öngörülen süreler içinde itiraz yapılır. Sürelere uyum için dosya özelinde planlama gerekir ve acil durumlarda hızlı hareket edilmesi önemlidir."
+        },
+        {
+          "question": "Temyiz süreci ne kadar sürer?",
+          "answer": "Temyiz süreci, Yargıtay'ın iş yoğunluğuna ve dosyanın özelliklerine göre değişkenlik gösterir. Ortalama süreçler hakkında önceden net bilgi vermek mümkün olmayabilir."
+        },
+        {
+          "question": "Sonuç garanti edilir mi?",
+          "answer": "Ceza yargılaması çok sayıda değişkene bağlıdır; sonuç veya süre garantisi verilemez. Ancak mevzuata uygun en etkili savunma sunulur."
+        }
+      ]
+    },
+    "family": {
+      "name": "Aile Hukuku",
+      "tagline": "Boşanma, velayet ve nafaka hizmetleri",
+      "meta": {
+        "title": "Aile Hukuku",
+        "description": "Boşanma, velayet, nafaka ve mal rejimi uyuşmazlıklarında hukuki süreçlerin özenle yürütülmesi gerekir."
+      },
+      "description": [
+        "Aile hukukuna ilişkin uyuşmazlıklarda süreçlerin dikkatle planlanması ve mevzuata uygun biçimde yürütülmesi esastır.",
+        "Boşanma, velayet, nafaka ve mal rejimi konularında dava ve danışmanlık hizmeti sunuyoruz."
+      ],
+      "scope": [
+        "Boşanma davalarında müdafilik ve mal rejiminin tasfiyesi",
+        "Velayet, kişisel ilişki düzenlenmesi ve nafaka talepleri",
+        "Koruma ve uzaklaştırma tedbirlerinin talep edilmesi ve takibi",
+        "Aile konutuna ilişkin uyuşmazlıkların değerlendirilmesi",
+        "Nişanlanma ve evlilik ön sözleşmelerine ilişkin danışmanlık",
+        "Soybağı, tanıma ve evlat edinme süreçlerinde hukuki destek"
+      ],
+      "process": [
+        {
+          "title": "İlk Görüşme",
+          "description": "Dosyanın genel çerçevesinin belirlenmesi, taleplerin ve beklentilerin analizi"
+        },
+        {
+          "title": "Belge Toplama",
+          "description": "Evlilik cüzdanı, tapu, banka kayıtları ve diğer delillerin sistematik şekilde derlenmesi"
+        },
+        {
+          "title": "Dava veya Arabuluculuk",
+          "description": "Anlaşmalı veya çekişmeli sürecin planlanması, dilekçelerin hazırlanması"
+        },
+        {
+          "title": "Duruşma Takibi",
+          "description": "Mahkeme oturumlarında temsil, tanık dinletilmesi ve bilirkişi raporlarının sunulması"
+        },
+        {
+          "title": "Karar ve Takip",
+          "description": "Kararın değerlendirilmesi, kanun yolu başvuruları ve icra takip işlemleri"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Boşanma davası ne kadar sürer?",
+          "answer": "Mahkemenin iş yükü, dosyanın kapsamı ve tarafların tutumuna göre değişir. Anlaşmalı boşanmalarda süreç daha kısa olabilir, ancak kesin süre garantisi verilemez."
+        },
+        {
+          "question": "Anlaşmalı boşanma için hangi belgeler gerekir?",
+          "answer": "Evlilik cüzdanı, kimlik belgesi, protokol ve dosyanın niteliğine göre mal varlığını gösteren belgeler gerekir. Süreç öncesi detaylı liste paylaşılır."
+        },
+        {
+          "question": "Velayet kararları sonradan değiştirilebilir mi?",
+          "answer": "Çocuğun üstün yararının gerektirdiği durumlarda, yeni olgular ortaya konarak velayet değişikliği talep edilebilir. Sosyal inceleme raporu gibi deliller önem taşır."
+        },
+        {
+          "question": "Nafaka miktarı nasıl belirlenir?",
+          "answer": "Tarafların ekonomik durumu, yaşam standardı, çocuğun ihtiyaçları ve diğer kriterler değerlendirilerek mahkeme takdiri ile belirlenir. Her dosya kendine özgüdür."
+        }
+      ]
+    },
+    "labor": {
+      "name": "İş Hukuku",
+      "tagline": "İşe iade, tazminat ve sözleşme hizmetleri",
+      "meta": {
+        "title": "İş Hukuku",
+        "description": "İş ilişkilerinde tarafların hak ve yükümlülüklerinin yasal değişiklikler ışığında dikkatle takip edilmesi gerekir."
+      },
+      "description": [
+        "İş ilişkilerinde tarafların hak ve yükümlülüklerinin yasal değişiklikler ışığında dikkatle takip edilmesi gerekir.",
+        "İşçi ve işveren tarafında dava ve danışmanlık hizmeti sunuyoruz."
+      ],
+      "scope": [
+        "İş sözleşmelerinin hazırlanması, değerlendirilmesi ve fesih süreçlerinin yönetimi",
+        "İşe iade davaları ve feshin geçersizliğinin tespiti talepleri",
+        "Kıdem, ihbar ve yıllık izin tazminatı alacak davaları",
+        "İş sağlığı ve güvenliği mevzuatına uyum danışmanlığı",
+        "Sosyal güvenlik primleri ve idari para cezalarına ilişkin uyuşmazlıklar",
+        "Toplu iş sözleşmeleri ve sendika işlemlerine ilişkin değerlendirmeler"
+      ],
+      "process": [
+        {
+          "title": "Dosya İncelemesi",
+          "description": "İş sözleşmesi, bordro, yazışmalar ve fesih bildiriminin hukuki analizi"
+        },
+        {
+          "title": "Arabuluculuk",
+          "description": "Zorunlu arabuluculuk başvurusunun yapılması ve müzakere sürecinin yönetimi"
+        },
+        {
+          "title": "Dava Süreci",
+          "description": "İş mahkemesinde dava açılması, dilekçe ve cevap hazırlıkları"
+        },
+        {
+          "title": "Duruşma ve Deliller",
+          "description": "Tanık dinletilmesi, bilirkişi incelemesi ve belgelerin sunulması"
+        },
+        {
+          "title": "Karar ve İcra",
+          "description": "Mahkeme kararının değerlendirilmesi, itiraz ve icra takip işlemleri"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Arabuluculuk başvurusu ne zaman zorunludur?",
+          "answer": "İşçi alacağı ve işe iade davalarında dava açmadan önce arabuluculuğa başvurmak zorunludur. Arabuluculuk sonuçsuz kalırsa son tutanak ile dava açılabilir."
+        },
+        {
+          "question": "Fesih bildiriminde nelere dikkat edilmeli?",
+          "answer": "Fesih gerekçesinin açık ve somut şekilde belirtilmesi, ihbar sürelerine uyulması ve ilgili belgelerin (bordrolar, çalışma belgesi) teslim edilmesi gerekir."
+        },
+        {
+          "question": "İşe iade davası süresi nedir?",
+          "answer": "Fesih bildiriminin tebliğinden itibaren 1 ay içinde arabuluculuğa başvurulmalı, arabuluculuk sonuçsuz kalırsa 2 hafta içinde dava açılmalıdır. Süreler kesin ve önemlidir."
+        },
+        {
+          "question": "Kıdem tazminatı ne zaman hak edilir?",
+          "answer": "İşçinin en az 1 yıl çalışması ve belirli fesih sebepleriyle (emeklilik, ölüm, askerlik, işveren feshi vb.) iş sözleşmesinin sona ermesi durumunda kıdem tazminatı hak edilir."
+        }
+      ]
+    },
+    "commercial": {
+      "name": "Ticaret Hukuku",
+      "tagline": "Şirket işlemleri ve ticari sözleşme hizmetleri",
+      "meta": {
+        "title": "Ticaret Hukuku",
+        "description": "Şirketlerin kuruluşundan günlük yönetimine kadar uzanan süreçlerde hukuki risklerin belirlenmesi ve mevzuata uyum önemlidir."
+      },
+      "description": [
+        "Şirketlerin kuruluşundan günlük yönetimine kadar uzanan süreçlerde hukuki risklerin belirlenmesi ve mevzuata uyum büyük önem taşır.",
+        "Ticari işlemler ve uyuşmazlıklarda dava ve danışmanlık hizmeti sunuyoruz."
+      ],
+      "scope": [
+        "Şirket kuruluş işlemleri, ana sözleşme hazırlıkları ve sicil tescilleri",
+        "Genel kurul, yönetim kurulu ve ortaklar kurulu toplantılarının yönetimi",
+        "Pay devir işlemleri, sermaye artırımı ve azaltımı süreçleri",
+        "Birleşme, bölünme ve tür değişikliği gibi yapısal işlemler",
+        "Ticari sözleşmelerin hazırlanması, müzakeresi ve gözden geçirilmesi",
+        "Haksız rekabet, alacak ve sorumluluk davalarında temsil"
+      ],
+      "process": [
+        {
+          "title": "İhtiyaç Analizi",
+          "description": "Şirket yapısı, ortaklar ve hedeflerin belirlenmesi, risk ve fırsat değerlendirmesi"
+        },
+        {
+          "title": "Mevzuat İncelemesi",
+          "description": "İlgili kanun, tüzük ve düzenleyici işlemlerin detaylı analizi"
+        },
+        {
+          "title": "Belge Hazırlığı",
+          "description": "Ana sözleşme, kurul kararları, sözleşme ve sicil başvuru belgelerinin düzenlenmesi"
+        },
+        {
+          "title": "Tescil ve Takip",
+          "description": "Ticaret sicili, vergi dairesi ve diğer kurumlarla yapılacak işlemlerin koordinasyonu"
+        },
+        {
+          "title": "Uyum ve Güncelleme",
+          "description": "Mevzuat değişikliklerinin takibi, sözleşme revizyonları ve şirket faaliyetlerinin kontrolü"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Şirket kuruluşunda hangi belgeler gerekir?",
+          "answer": "Şirket türüne göre değişir; genellikle ana sözleşme, kuruculara ait kimlik ve ikametgah belgeleri, sermaye taahhüt beyanları ve banka dekontları gerekir. Tam liste süreç öncesi paylaşılır."
+        },
+        {
+          "question": "Genel kurul kararları nasıl hazırlanır?",
+          "answer": "Gündem, toplantı çağrı süreci ve karar metinleri Türk Ticaret Kanunu'na uygun şekilde düzenlenir. İlan, hazirun listesi ve karar defterleri usulüne uygun tutulmalıdır."
+        },
+        {
+          "question": "Pay devri işlemi nasıl yapılır?",
+          "answer": "Ana sözleşmeye göre değişir; anonim şirketlerde nama yazılı paylar için yönetim kurulu onayı gerekebilir. Devir sözleşmesi hazırlanıp pay defterine işlenir ve sicile tescil ettirilir."
+        },
+        {
+          "question": "Ticari sözleşme riskleri nasıl yönetilir?",
+          "answer": "Taraf yükümlülükleri, cezai şart, temerrüt ve fesih koşulları detaylı incelenir. Mevzuata uyumsuz hükümler tespit edilir ve ticari hedeflere uygun düzenleme önerilir."
+        }
+      ]
+    },
+    "enforcement": {
+      "name": "İcra ve İflas Hukuku",
+      "tagline": "Alacak takibi ve iflas süreçleri",
+      "meta": {
+        "title": "İcra ve İflas Hukuku",
+        "description": "Alacak ve borç ilişkilerinde icra-iflas süreçlerinin mevzuata uygun biçimde yürütülmesi önemlidir."
+      },
+      "description": [
+        "Alacak ve borç ilişkilerinde icra-iflas süreçlerinin mevzuata uygun biçimde yürütülmesi önemlidir.",
+        "İcra takipleri, haciz işlemleri, iflas ve konkordato süreçlerinde hukuki destek sunuyoruz."
+      ],
+      "scope": [
+        "İlamsız ve ilamlı icra takiplerinin başlatılması ve takibi",
+        "Haciz işlemleri, sıra cetveli ve paylaştırma süreçleri",
+        "İflas, iflasın ertelenmesi ve konkordato süreçlerinin planlanması",
+        "Alacaklı-borçlu uzlaşmaları ve yeniden yapılandırma görüşmeleri",
+        "İtiraz, şikayet ve menfi tespit davalarının yürütülmesi",
+        "İcra inkar tazminatı ve istihkak davalarında hukuki destek"
+      ],
+      "process": [
+        {
+          "title": "Alacak Değerlendirmesi",
+          "description": "Alacak veya borç durumunun belgeleriyle değerlendirilmesi ve hukuki analizi"
+        },
+        {
+          "title": "Takip Başlatma",
+          "description": "Uygun takip türünün seçilmesi ve gerekli başvuruların yapılması"
+        },
+        {
+          "title": "Haciz ve Satış",
+          "description": "Haciz işlemlerinin planlanması ve satış süreçlerinin takibi"
+        },
+        {
+          "title": "İtiraz Süreci",
+          "description": "İtiraz ve şikayet süreçlerinin yürütülmesi, duruşmalarda temsil"
+        },
+        {
+          "title": "Sonuç ve Takip",
+          "description": "Sonuçların uygulanması, icra dosyasının takibi ve raporlanması"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "İcra takibi ne kadar sürer?",
+          "answer": "Takibin niteliği, borçlunun tutumu ve icra dairesinin iş yüküne göre süre değişebilir. Süreç hakkında kesin süre garantisi verilemez ancak dosya düzenli takip edilir."
+        },
+        {
+          "question": "Konkordato süreci nasıl işler?",
+          "answer": "Başvuru dilekçesi ve proje sunulur, mahkeme geçici mühlet kararı verir ve konkordato komiseri süreci denetler. Alacaklıların onayı ve mahkeme tasdiki gerekir."
+        },
+        {
+          "question": "Borçlunun malvarlığı nasıl tespit edilir?",
+          "answer": "Resmi kayıtlar, sorgular ve gerektiğinde keşif gibi usullerden yararlanılır. Hukuka aykırı yöntemler kesinlikle kullanılmaz, yasal çerçevede hareket edilir."
+        },
+        {
+          "question": "İcra takibine itiraz edilebilir mi?",
+          "answer": "Borçlu, takibe tebliğ tarihinden itibaren 7 gün içinde itiraz edebilir. İtiraz üzerine alacaklı, itirazın kaldırılması veya alacak davası açabilir."
+        }
+      ]
+    },
+    "administrative": {
+      "name": "İdare Hukuku",
+      "tagline": "İptal, tam yargı ve idari işlem davaları",
+      "meta": {
+        "title": "İdare Hukuku",
+        "description": "İdari işlem ve eylemlerden kaynaklanan uyuşmazlıklarda sürecin doğru değerlendirilmesi ve idari yargıda mevzuata uygun hareket edilmesi gerekir."
+      },
+      "description": [
+        "İdari işlem ve eylemlerden kaynaklanan uyuşmazlıklarda sürecin doğru değerlendirilmesi ve idari yargıda mevzuata uygun hareket edilmesi esastır.",
+        "Kamu kurumlarıyla olan uyuşmazlıklarda dava ve danışmanlık hizmeti sunuyoruz."
+      ],
+      "scope": [
+        "İdari işlemlere karşı iptal ve tam yargı davalarının planlanması ve takibi",
+        "Yürütmenin durdurulması ve ihtiyati tedbir başvurularının değerlendirilmesi",
+        "Kamu ihaleleri, itirazlar ve sözleşme uyuşmazlıklarının yönetimi",
+        "Disiplin işlemleri, kadro-memur davalarında savunma ve müdafilik",
+        "İmar uygulamaları, kamulaştırma ve belediye hukuku süreçleri",
+        "İdari para cezalarına itiraz, vergi ve gümrük uyuşmazlıkları"
+      ],
+      "process": [
+        {
+          "title": "Tebliğ ve Süre Analizi",
+          "description": "İdari işlemin tebliğ tarihinin tespiti ve dava açma süresinin hesaplanması"
+        },
+        {
+          "title": "İdari Başvuru",
+          "description": "Gerekli hallerde üst makama şikayet veya sulh uzlaşma yollarının değerlendirilmesi"
+        },
+        {
+          "title": "Dava Açma",
+          "description": "İdari yargıda iptal veya tam yargı davası dilekçesinin hazırlanması ve sunulması"
+        },
+        {
+          "title": "Duruşma Süreci",
+          "description": "Bilirkişi talepleri, keşif ve tanık dinletilmesi, yazılı savunmaların sunulması"
+        },
+        {
+          "title": "İstinaf ve Temyiz",
+          "description": "Karar sonrası bölge idare mahkemesi ve Danıştay başvurularının planlanması"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "İdari davada süre ne kadar önemlidir?",
+          "answer": "İdari Yargılama Usulü Kanunu katı süreler öngörür. Genellikle tebliğ tarihinden itibaren 60 veya 30 gün içinde dava açılmalıdır. Süreye uyum kritik öneme sahiptir, süre kaçırıldığında dava esastan reddedilebilir."
+        },
+        {
+          "question": "Yürütmenin durdurulması ne anlama gelir?",
+          "answer": "İdari işlemin uygulanmasının geçici olarak durdurulmasıdır. Telafisi güç zararlar ve ciddi delillerin varlığı halinde mahkeme tarafından verilebilir. Karar kesinleşene kadar işlemin icra edilmesi engellenir."
+        },
+        {
+          "question": "İdari dava açmadan önce idareye başvuru zorunlu mu?",
+          "answer": "Bazı işlem türlerinde (örneğin bazı vergi ve gümrük işlemlerinde) zorunlu idari başvuru prosedürü bulunur. Dosya özelinde mevzuat değerlendirmesi yapılmalıdır."
+        },
+        {
+          "question": "İhale kararlarına ne sürede itiraz edilir?",
+          "answer": "Kamu İhale Kanunu'na göre ihale işlemlerine itiraz süreleri 10 gün ile sınırlıdır. İhale İtiraz Komisyonu kararlarına karşı da 30 gün içinde idari yargıya başvurulabilir."
+        }
+      ]
+    },
+    "real_estate": {
+      "name": "Kira Hukuku",
+      "tagline": "Tahliye, kira tespiti ve uyuşmazlık hizmetleri",
+      "meta": {
+        "title": "Kira Hukuku",
+        "description": "Kira ilişkilerinden doğan uyuşmazlıklarda süreçlerin dikkatle planlanması ve Türk Borçlar Kanunu ile özel mevzuata uygun hareket edilmesi gerekir."
+      },
+      "description": [
+        "Kira ilişkilerinden doğan uyuşmazlıklarda süreçlerin dikkatle planlanması ve Türk Borçlar Kanunu ile özel mevzuata uygun hareket edilmesi gerekir.",
+        "Tahliye, kira bedeli tespiti ve diğer kira uyuşmazlıklarında hukuki destek sunuyoruz."
+      ],
+      "scope": [
+        "Tahliye davalarının planlanması ve kiracı savunmasının oluşturulması",
+        "Kira bedelinin tespiti, güncellenmesi ve uyarlanmasına ilişkin davalar",
+        "Kiralananın kullanılması, bakımı ve onarımından kaynaklanan hak ve yükümlülükler",
+        "Konut ve çatılı işyeri kiralarına ilişkin özel düzenlemelerin uygulanması",
+        "Kira sözleşmelerinin hazırlanması ve müzakeresi",
+        "Kira teminatı, depozito ve güvence bedeli uygulamaları"
+      ],
+      "process": [
+        {
+          "title": "Sözleşme İncelemesi",
+          "description": "Kira sözleşmesinin ve bildirim belgelerinin detaylı incelenmesi ve hukuki değerlendirme"
+        },
+        {
+          "title": "İhtar Değerlendirmesi",
+          "description": "İhtarname, ihtar veya fesih bildirimlerinin değerlendirilmesi ve cevap stratejisinin oluşturulması"
+        },
+        {
+          "title": "Arabuluculuk veya Dava",
+          "description": "Arabuluculuk veya dava sürecinin başlatılması ve gerekli dilekçelerin hazırlanması"
+        },
+        {
+          "title": "Duruşma Süreci",
+          "description": "Duruşmaların takibi, delillerin sunulması ve tanık dinletilmesi"
+        },
+        {
+          "title": "Kanun Yolu",
+          "description": "Karar sonrası istinaf ve temyiz süreçlerinin yürütülmesi ve takibi"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Tahliye davası hangi hallerde açılabilir?",
+          "answer": "Kanunda sayılan tahliye sebepleri sınırlıdır; kira bedelini ödememe, kötü kullanma, taşınmazın yıkılması gibi haller bulunmaktadır. Her dosya özel koşullarına göre değerlendirilmelidir."
+        },
+        {
+          "question": "Kira artış oranları nasıl belirlenir?",
+          "answer": "Türk Borçlar Kanunu ve sözleşme hükümlerine göre yıllık artış oranları belirlenir. Kanunda üst sınırlar düzenlenmiştir ve bu sınırların aşılması geçersizdir."
+        },
+        {
+          "question": "Kiracı tahliye kararına karşı ne yapabilir?",
+          "answer": "Karar tebliğinden itibaren belirlenen süreler içinde istinaf ve temyiz yollarına başvurulabilir. Sürelerin kaçırılmaması büyük önem taşır ve hukuki danışmanlık alınmalıdır."
+        },
+        {
+          "question": "Kira sözleşmesi sona erince ne olur?",
+          "answer": "Sözleşme süresi sonunda kiracının taşınmazı terk etmesi gerekir. Ancak tahliye için yasal prosedürlere uyulması, gerektiğinde tahliye davası açılması zorunludur."
+        }
+      ]
+    },
+    "contracts": {
+      "name": "Sözleşmeler Hukuku",
+      "tagline": "Sözleşme hazırlama ve uyuşmazlık yönetimi",
+      "meta": {
+        "title": "Sözleşmeler Hukuku",
+        "description": "Sözleşmelerin hazırlanması, revize edilmesi ve uyuşmazlık yönetiminin dengeli şekilde yapılması önem taşır."
+      },
+      "description": [
+        "Sözleşmelerin hazırlanması, revize edilmesi ve uyuşmazlık yönetiminin dengeli şekilde yapılması önem taşır.",
+        "Ticari sözleşmeler, hizmet sözleşmeleri ve diğer sözleşme türlerinde danışmanlık ve dava hizmeti sunuyoruz."
+      ],
+      "scope": [
+        "Ticari sözleşmelerin hazırlanması ve müzakeresi",
+        "Distribütörlük, bayilik, hizmet ve gizlilik sözleşmeleri",
+        "Sözleşmelerin mevzuata uygunluk denetimi",
+        "Uygulama sırasında ortaya çıkan uyuşmazlıkların değerlendirilmesi",
+        "Sözleşme feshi, tazminat ve cezai şart davalarında temsil",
+        "Franchise, lisans ve ortaklık sözleşmelerine ilişkin danışmanlık"
+      ],
+      "process": [
+        {
+          "title": "İhtiyaç Analizi",
+          "description": "Taraf ihtiyaçlarının ve risklerin detaylı analiz edilmesi"
+        },
+        {
+          "title": "Taslak Hazırlama",
+          "description": "Sözleşme taslağının hazırlanması veya mevcut sözleşmenin incelenmesi"
+        },
+        {
+          "title": "Müzakere Planı",
+          "description": "Müzakere stratejisinin oluşturulması ve görüşmelerin yürütülmesi"
+        },
+        {
+          "title": "Son Kontrol",
+          "description": "İmzalama ve uygulama öncesi kontrol listelerinin tamamlanması"
+        },
+        {
+          "title": "Takip ve Güncelleme",
+          "description": "Sözleşmenin yürütümü sırasında güncelleme ve raporlama"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Sözleşmeye hangi maddeler eklenmeli?",
+          "answer": "Tarafların pozisyonu, mevzuat ve risk analizine göre belirlenir. Standart bir liste tüm durumlar için uygun olmayabilir; her sözleşme özel değerlendirme gerektirir."
+        },
+        {
+          "question": "Müzakere süreci nasıl planlanır?",
+          "answer": "Öncelikler belirlenir, karşı tarafın beklentileri analiz edilir ve toplantı notları düzenli tutulur. Profesyonel müzakere tekniklerinden yararlanılır."
+        },
+        {
+          "question": "Uyumsuzluk tespit edildiğinde ne yapılır?",
+          "answer": "İlgili maddeler revize edilir, alternatif düzenlemeler önerilir ve gerekirse ek protokoller hazırlanır. Mevzuata uygunluk sağlanması önceliklidir."
+        },
+        {
+          "question": "Sözleşme ihlali durumunda ne olur?",
+          "answer": "İhlalin niteliğine göre tazminat, fesih veya ifaya zorlama davası açılabilir. Cezai şart ve tazminat talepleri sözleşme hükümlerine göre değerlendirilir."
+        }
+      ]
+    },
+    "international": {
+      "name": "Yabancılar ve Tahkim Hukuku",
+      "tagline": "Uluslararası uyuşmazlıklar ve tahkim süreçleri",
+      "meta": {
+        "title": "Yabancılar ve Tahkim Hukuku",
+        "description": "Uluslararası unsurlu uyuşmazlıklar ve tahkim süreçlerinde çok taraflı anlaşmalar, milletlerarası özel hukuk kuralları ve tahkim mevzuatına uygun hareket edilmesi gerekir."
+      },
+      "description": [
+        "Uluslararası unsurlu uyuşmazlıklar ve tahkim süreçlerinde çok taraflı anlaşmalar, milletlerarası özel hukuk kuralları ve tahkim mevzuatına uygun hareket edilmesi gerekir.",
+        "Yabancı yatırımlar, tahkim süreçleri ve uluslararası ticari uyuşmazlıklarda hukuki destek sunuyoruz."
+      ],
+      "scope": [
+        "Yabancıların Türkiye'deki hukuki statüsü ve ikamet/çalışma izinlerine ilişkin süreçler",
+        "Uluslararası ticari sözleşmeler ve yabancı yatırımlara dair hukuki danışmanlık",
+        "Yurtiçi ve yurtdışı tahkim yoluna başvurulması ve hakem kararlarının tenfizi",
+        "Milletlerarası hukuk çatışması kurallarının uygulanması ve yabancı mahkeme kararlarının tanınması",
+        "Yabancı şirketlerin Türkiye'de şube açma ve ticari faaliyet süreçleri",
+        "Uluslararası aile hukuku uyuşmazlıkları ve velayet davaları"
+      ],
+      "process": [
+        {
+          "title": "Sözleşme Değerlendirmesi",
+          "description": "Sözleşmelerin ve tahkim şartlarının detaylı değerlendirilmesi"
+        },
+        {
+          "title": "Yetki Tespiti",
+          "description": "Yetkili hukuk sisteminin ve yetkili merciinin tespiti"
+        },
+        {
+          "title": "Tahkim Başvurusu",
+          "description": "Tahkim veya yargı sürecinin başlatılması ve hakem heyetinin oluşturulması"
+        },
+        {
+          "title": "Uyuşmazlık İncelemesi",
+          "description": "Uyuşmazlığın esasının incelenmesi, delillerin sunulması ve duruşmaların takibi"
+        },
+        {
+          "title": "Tenfiz ve İcra",
+          "description": "Hakem veya mahkeme kararının tenfizi ve sonrasındaki hukuki yükümlülüklerin yerine getirilmesi"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Tahkim mahkeme yargılamasından nasıl farklıdır?",
+          "answer": "Tahkimde taraflar hakem seçer, süreç gizli ve genelde daha esnek yürür. Tahkim kararları New York Sözleşmesi çerçevesinde milletlerarası tanınmada avantajlıdır."
+        },
+        {
+          "question": "Yabancı mahkeme kararı Türkiye'de tanınır mı?",
+          "answer": "İlgili uluslararası anlaşmalar veya karşılıklılık ilkesi çerçevesinde tanıma ve tenfiz prosedürü uygulanır. Her karar otomatik tanınmaz, özel inceleme gerekir."
+        },
+        {
+          "question": "Uluslararası sözleşmelerde hangi hukuk geçerli olur?",
+          "answer": "Tarafların seçtiği hukuk veya en yakın ilişkili hukuk sistemi uygulanır. Sözleşme hazırlığında hukuk seçimi stratejik önem taşır ve dikkatlice değerlendirilmelidir."
+        },
+        {
+          "question": "Yabancılar Türkiye'de tapu edinebilir mi?",
+          "answer": "Karşılıklılık ilkesi ve kanuni sınırlamalar çerçevesinde yabancılar Türkiye'de taşınmaz edinebilir. Askeri bölgeler ve özel güvenlik bölgelerinde kısıtlamalar vardır."
+        }
+      ]
+    }
+  }
+}

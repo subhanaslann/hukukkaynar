@@ -1,0 +1,174 @@
+﻿/*
+ * KAYNAR HUKUK BÜROSU - Premium Anasayfa
+ *
+ * Referans Analizi (yildirimhukuk.av.tr):
+ * - Renk: Koyu lacivert (#030e49) + altın (#a08441), yüksek kontrast
+ * - Tipografi: Sans-serif (Raleway), büyük ağırlıklı başlıklar, justify hiza
+ * - Hiyerarşi: Hero carousel, özet, faaliyet grid, içtihatlar, iletişim
+ * - Atmosfer: Kurumsal, güvenilir, ciddi, profesyonel
+ *
+ * Tasarım Yaklaşımı:
+ * - Serif başlıklar (Merriweather) + sans metin (Inter)
+ * - Altın vurgu (#C8A45D) ince çizgiler ve detaylarda
+ * - Bol beyaz alan, minimal hareket
+ * - Mobil-öncelikli, erişilebilir
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  /* Premium Law Firm Color Palette */
+  --bg: 14 48% 11%;           /* #0E1726 - Deep navy */
+  --fg: 220 13% 95%;          /* #F3F4F6 - Ivory white */
+  --muted: 214 15% 65%;       /* #9AA4B2 - Muted blue-gray */
+  --muted-fg: 214 15% 45%;    /* Darker muted */
+  --gold: 40 48% 58%;         /* #C8A45D - Elegant gold */
+  --gold-subtle: 40 48% 58%;  /* For borders/accents */
+  --line: 40 48% 58% / 0.35;  /* Hairline separator */
+
+  /* Semantic colors */
+  --border: 220 13% 20%;
+  --ring: 40 48% 58%;
+  --card: 14 48% 13%;
+  --card-fg: 220 13% 95%;
+
+  /* Status colors */
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --error: 0 84% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-[hsl(var(--bg))] text-[hsl(var(--fg))] antialiased;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold tracking-tight;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+}
+
+@layer components {
+  /* Gold accent utilities */
+  .gold-line {
+    @apply border-[hsl(var(--gold))]/35;
+  }
+
+  .gold-text {
+    @apply text-[hsl(var(--gold))];
+  }
+
+  .gold-border {
+    @apply border-[hsl(var(--gold))];
+  }
+
+  /* Link styles */
+  a {
+    @apply text-[hsl(var(--gold))] underline-offset-4 transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply text-[hsl(var(--gold))]/80;
+  }
+
+  /* Focus styles - accessibility */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-[hsl(var(--ring))];
+  }
+
+  /* Card component */
+  .card {
+    @apply rounded-lg border border-[hsl(var(--border))] bg-[hsl(var(--card))] text-[hsl(var(--card-fg))] shadow-sm;
+  }
+}
+
+/* Smooth scroll with reduced motion respect */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 50;
+  background: hsl(var(--card));
+  color: hsl(var(--card-fg));
+  border: 1px solid hsl(var(--gold));
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Utility helpers */
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
+}
+
+/* Logo Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}

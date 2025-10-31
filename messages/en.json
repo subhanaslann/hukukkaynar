@@ -1,0 +1,1103 @@
+{
+  "nav": {
+    "about": "About Us",
+    "practiceAreas": "Practice Areas",
+    "team": "Our Team",
+    "news": "News",
+    "articles": "Articles",
+    "contact": "Contact",
+    "appointment": "Book Appointment",
+    "menuToggle": "Toggle menu",
+    "brandSubtitle": "Law Firm"
+  },
+  "hero": {
+    "title": "We defend your rights with determination and due process.",
+    "subtitle": "End-to-end representation in criminal, family, labor and commercial law. Fast initial assessment and transparent process.",
+    "ctaAppointment": "Book Appointment",
+    "ctaCall": "Call Now"
+  },
+  "about": {
+    "label": "About Us",
+    "title": "Professional Legal Consulting",
+    "description": "We work to provide the best legal service to our clients.",
+    "paragraphs": [
+      "As Kaynar Law Firm, we provide litigation and advisory services in criminal, family, labor and commercial law. We evaluate each matter according to its specific needs and monitor legal developments closely.",
+      "We are committed to setting realistic expectations, managing the process transparently and briefing our clients at every stage."
+    ],
+    "values": {
+      "integrity": {
+        "title": "Honest Counsel",
+        "description": "We establish realistic expectations and communicate potential risks clearly."
+      },
+      "discipline": {
+        "title": "Disciplined Follow-up",
+        "description": "We monitor every step methodically and keep clients informed."
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "We strictly observe professional rules and legal standards."
+      }
+    },
+    "imageAlt": "Kaynar Law Office",
+    "pageHeading": "We manage your legal processes with confidence",
+    "principles": [
+      "We analyse each matter in light of legislation and case law before shaping the strategy.",
+      "Data security is prioritised and personal data is processed in accordance with data-protection law.",
+      "Communication remains transparent and measured, with regular updates throughout the process.",
+      "We screen for potential conflicts of interest in advance and preserve professional independence."
+    ],
+    "valuesSection": {
+      "title": "Our Values",
+      "description": "Compliance with legislation, systematic work and transparent communication form the pillars of our practice. We evaluate every stage based on concrete information, avoid guarantees regarding unpredictable outcomes and explain potential changes clearly."
+    },
+    "contactSection": {
+      "title": "Contact Information"
+    },
+    "principlesTitle": "Working Principles"
+  },
+  "practiceAreas": {
+    "label": "Our Practice Areas",
+    "title": "Areas of Expertise",
+    "description": "We provide legal support in a wide range of areas",
+    "viewAll": "View All",
+    "criminal": "Criminal Law",
+    "criminalDesc": "Representation in crime and punishment cases",
+    "family": "Family Law",
+    "familyDesc": "Divorce, custody and alimony cases",
+    "labor": "Labor Law",
+    "laborDesc": "Protection of employee and employer rights",
+    "commercial": "Commercial Law",
+    "commercialDesc": "Company and commercial transaction consultancy",
+    "administrative": "Administrative Law",
+    "administrativeDesc": "Lawsuits against public institutions",
+    "real_estate": "Real Estate Law",
+    "real_estateDesc": "Property buying-selling and rental transactions",
+    "intellectual": "Intellectual Property Law",
+    "intellectualDesc": "Patent, trademark and copyright",
+    "banking": "Banking Law",
+    "bankingDesc": "Bank and finance transactions",
+    "inheritance": "Inheritance Law",
+    "inheritanceDesc": "Inheritance distribution and succession procedures",
+    "items": {
+      "criminal": {
+        "title": "Criminal Law",
+        "description": "Defense throughout investigation and prosecution, including appeals and objections."
+      },
+      "family": {
+        "title": "Family Law",
+        "description": "Representation in divorce, custody, alimony and property distribution matters."
+      },
+      "labor": {
+        "title": "Labor Law",
+        "description": "Protecting employee and employer rights, compensation and reinstatement claims."
+      },
+      "commercial": {
+        "title": "Commercial Law",
+        "description": "Company formation, contracts, commercial disputes and enforcement proceedings."
+      },
+      "enforcement": {
+        "title": "Enforcement & Bankruptcy Law",
+        "description": "Debt recovery, attachment procedures and strategic support across insolvency."
+      },
+      "administrative": {
+        "title": "Administrative Law",
+        "description": "Litigation against public authorities and challenges to administrative acts."
+      },
+      "real_estate": {
+        "title": "Real Estate Law",
+        "description": "Title transactions, lease agreements, condominium and eviction matters."
+      },
+      "contracts": {
+        "title": "Contracts Law",
+        "description": "Drafting, negotiating and enforcing commercial agreements."
+      },
+      "international": {
+        "title": "Foreigners & Arbitration Law",
+        "description": "Counsel on international disputes, arbitration and cross-border investments."
+      }
+    }
+  },
+  "team": {
+    "label": "Our Team",
+    "title": "Our Attorneys",
+    "description": "At your service with our experienced and expert staff",
+    "moreCount": "+{count} more",
+    "card": {
+      "role": "Attorney",
+      "specialties": "Practice Areas",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Client Testimonials",
+    "description": "Clients satisfied with our services",
+    "items": [
+      {
+        "quote": "They explained the process from start to finish and kept me informed at every step. Their professional approach kept everything on track.",
+        "author": "M.B.",
+        "location": "Istanbul"
+      },
+      {
+        "quote": "They set realistic expectations and shared potential risks transparently. That level of honesty was invaluable.",
+        "author": "E.K.",
+        "location": "Ankara"
+      },
+      {
+        "quote": "Their legal expertise and meticulous work are impressive. I recommend them with complete confidence.",
+        "author": "S.Y.",
+        "location": "Izmir"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Get in touch with us",
+    "description": "You can contact us for legal consultancy and appointment requests.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "Your name and surname",
+      "emailPlaceholder": "example@email.com",
+      "phonePlaceholder": "+90 555 123 45 67",
+      "subjectPlaceholder": "What do you need help with?",
+      "messagePlaceholder": "Please briefly describe your situation...",
+      "kvkkConsent": " and agree to the processing of my personal data.",
+      "kvkkLink": "Privacy Policy",
+      "newsletter": "I want to receive newsletters and announcements.",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully. We will get back to you as soon as possible.",
+      "error": "An error occurred. Please try again later.",
+      "required": "*"
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "whatsapp": "Contact via WhatsApp",
+      "whatsappDesc": "Click for quick support"
+    },
+    "addressText": "Sample Street, Law Avenue No:12",
+    "cityText": "Kadıköy, Istanbul 34710",
+    "phoneNumber": "+90 555 123 45 67",
+    "emailAddress": "info@kaynar.com",
+    "note": "Your message is handled confidentially; this communication does not establish an attorney-client relationship.",
+    "disclaimer": "The content on this website is for general information purposes and is not legal advice.",
+    "cityShort": "Istanbul, Türkiye",
+    "mapFallback": "Map could not be loaded",
+    "kvkkRequired": "KVKK consent is required.",
+    "whatsappMessage": "Hello, I would like to request legal support.",
+    "mapTitle": "Kaynar Law Firm Location"
+  },
+  "news": {
+    "backToList": "Back to news list",
+    "source": "Source",
+    "readFull": "Read the full article",
+    "tags": "Tags",
+    "disclaimer": "This news is for summary information purposes. Please check the relevant official sources for detailed and up-to-date information."
+  },
+  "articles": {
+    "backToList": "Back to articles list",
+    "disclaimer": "General information, not legal opinion."
+  },
+  "common": {
+    "loading": "Loading...",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "viewDetails": "View Details",
+    "close": "Close",
+    "back": "Back",
+    "changeLanguage": "Change language"
+  },
+  "cookies": {
+    "banner": {
+      "title": "Cookie notice",
+      "description": "Necessary cookies are required for site security. We may request your consent for {statistics} and {functional} cookies. You can update your preferences at any time.",
+      "accept": "Accept All",
+      "reject": "Reject",
+      "preferences": "Preferences"
+    },
+    "preferences": {
+      "title": "Cookie Preferences",
+      "description": "Necessary cookies are used for site security and cannot be disabled. You can manage the other categories to suit your needs.",
+      "active": "Active",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "categories": {
+      "necessary": {
+        "name": "Necessary",
+        "description": "Required for secure sessions and core functionality. These cookies cannot be disabled."
+      },
+      "statistics": {
+        "name": "Analytics",
+        "description": "Provide anonymous measurements for traffic and usage analysis. They are only used with your consent."
+      },
+      "functional": {
+        "name": "Functional",
+        "description": "Needed to embed services like maps. They load only after you approve them."
+      }
+    }
+  },
+  "partners": {
+    "label": "Memberships & Collaborations",
+    "items": [
+      "Istanbul Bar Association",
+      "Union of Turkish Bar Associations",
+      "Legal Research Foundation",
+      "International Law Commission",
+      "Chamber of Commerce",
+      "Commodity Exchange",
+      "Lawyers Association",
+      "Justice Academy"
+    ]
+  },
+  "footer": {
+    "disclaimer": "The content on this website is for general information purposes only and does not constitute legal advice.",
+    "cookiePreferences": "Cookie Preferences",
+    "secondaryNotice": "This website is for information purposes only and does not constitute legal advice.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "linksAria": "Footer navigation",
+    "copyright": "© {year} Kaynar Law Firm."
+  },
+  "filters": {
+    "date": {
+      "label": "Date",
+      "groupLabel": "Date filters",
+      "ranges": {
+        "today": "Today",
+        "last7": "Last 7 Days",
+        "thisMonth": "This Month",
+        "thisYear": "This Year",
+        "custom": "Custom Range…"
+      },
+      "custom": {
+        "ariaLabel": "Choose a custom date range",
+        "title": "Custom Date Range",
+        "startLabel": "Start Date",
+        "endLabel": "End Date",
+        "cancel": "Cancel",
+        "apply": "Apply",
+        "close": "Close",
+        "placeholder": "mm/dd/yyyy",
+        "helpText": "Date format: mm/dd/yyyy (e.g. 10/01/2025)",
+        "errors": {
+          "invalidFormat": "Invalid date format. Example: 10/01/2025",
+          "required": "Start and end dates are required",
+          "endBeforeStart": "End date cannot be before the start date"
+        }
+      }
+    },
+    "sort": {
+      "aria": "Sort: {direction}",
+      "desc": "Newest → Oldest",
+      "asc": "Oldest → Newest"
+    },
+    "reset": {
+      "label": "Reset",
+      "aria": "Reset all filters"
+    },
+    "active": {
+      "title": "Active Filters ({count})",
+      "clearAll": "Clear All",
+      "remove": "Remove filter {label}"
+    },
+    "categories": {
+      "title": "Practice Areas",
+      "showMore": "Show More ({count})",
+      "showMoreAria": "Show {count} more practice areas",
+      "dialogTitle": "All Practice Areas",
+      "dialogAria": "All practice areas",
+      "searchPlaceholder": "Search...",
+      "empty": "No results found",
+      "apply": "Apply",
+      "close": "Close"
+    },
+    "advanced": {
+      "toggle": "Advanced",
+      "toggleAria": "Toggle advanced filters",
+      "panelAria": "Advanced filters panel",
+      "search": {
+        "label": "Search",
+        "placeholder": "Search by title, summary, or tags..."
+      },
+      "types": {
+        "heading": "Content Type"
+      },
+      "sources": {
+        "heading": "Source"
+      }
+    }
+  },
+  "pages": {
+    "practiceAreas": {
+      "title": "Our Practice Areas",
+      "subtitle": "Discover our expertise",
+      "intro": [
+        "We adopt a measured and informative approach that complies with applicable legislation in every area we handle.",
+        "We provide litigation and advisory services across all of our core practice areas."
+      ],
+      "disclaimer": "The content on this page is for general information purposes and does not constitute legal advice."
+    },
+    "articles": {
+      "metadata": {
+        "title": "Articles",
+        "description": "Filterable legal articles by practice area and date."
+      },
+      "list": {
+        "heading": "Articles",
+        "subtitle": "Insights and commentary from our team",
+        "description": "Filter our legal articles by date and practice area.",
+        "results": "{count, plural, one {# result found} other {# results found}}"
+      },
+      "empty": {
+        "title": "No results found",
+        "description": "Try adjusting the filters to broaden your search."
+      },
+      "detail": {
+        "back": "Back to articles list",
+        "disclaimer": "The information provided is for general guidance and does not constitute legal advice.",
+        "generalNotice": "The content on this website is for information purposes only and does not constitute legal advice.",
+        "notFoundTitle": "Article not found"
+      }
+    },
+    "team": {
+      "metaTitle": "Our Team",
+      "metaDescription": "Kaynar Law Firm attorneys and team members.",
+      "heading": "Our Team",
+      "subtitle": "Meet our lawyers and review their areas of expertise and education."
+    },
+    "about": {
+      "metaTitle": "About Us",
+      "metaDescription": "Kaynar Law Firm is a team committed to managing legal matters with transparency and diligence.",
+      "heading": "About Us",
+      "summary": "Since our establishment we have provided litigation and advisory services in criminal, family, commercial and labor law."
+    },
+    "faq": {
+      "metaTitle": "Frequently Asked Questions",
+      "metaDescription": "Frequently asked questions about Kaynar Law Firm and general guidance.",
+      "heading": "Frequently Asked Questions",
+      "description": "The information below is general; each file must be assessed according to its own circumstances.",
+      "items": [
+        {
+          "question": "How do I issue a power of attorney?",
+          "answer": "A notarised power of attorney is required. Its scope depends on the legal process to be handled and the procedure is completed with identification documents such as an ID card or passport."
+        },
+        {
+          "question": "How can I learn the hearing date?",
+          "answer": "You may obtain the date and time from the court registry, the e-Justice (UYAP) portal or through your lawyer. Monitoring the file is essential because hearing dates can change."
+        },
+        {
+          "question": "How do service of process and deadlines work?",
+          "answer": "The Law on Notifications and related regulations apply. The date of proper service usually starts the clock for statutory deadlines, which may vary depending on the legislation."
+        },
+        {
+          "question": "Can I view my case file through UYAP?",
+          "answer": "Parties to a case may view portions of the file on the UYAP citizen portal. Access may be restricted if the file is subject to a confidentiality order."
+        }
+      ]
+    },
+    "kvkk": {
+      "aydinlatma": {
+        "metaTitle": "Data Protection Notice",
+        "metaDescription": "Information on how Kaynar Law Firm processes personal data.",
+        "title": "Data Protection Notice",
+        "description": "As Kaynar Law Firm, we safeguard your personal data in accordance with the Personal Data Protection Law (Law No. 6698). The information below applies to website visitors, individuals who complete the contact form and job applicants.",
+        "sections": [
+          {
+            "title": "1. Data Controller",
+            "body": [
+              "Data controller: Kaynar Law Firm. Contact: info@kaynar.av.tr, +90-___-___-____. Address: ___ Mah., ___ Sk. No: __, ___ / ___."
+            ]
+          },
+          {
+            "title": "2. Visitor Data",
+            "body": [
+              "The following data may be processed when you visit our website:"
+            ],
+            "list": [
+              "IP address, browser details and log records",
+              "Cookie preferences and session information"
+            ],
+            "note": "Purposes: ensuring site security, measuring performance and managing preferences. Legal grounds: Law No. 5651, legitimate interest, explicit consent (for statistical/functional cookies)."
+          },
+          {
+            "title": "3. Contact Form Data",
+            "body": [
+              "The name, surname, phone number, e-mail address and message submitted via the form are processed solely to respond to your request.",
+              "Legal grounds: Attorneyship Law, PDPL Article 5/2(c) (establishment or performance of a contract) and Article 5/2(f) (legitimate interest). Explicit consent is obtained where required. Data is stored in encrypted systems and not shared with third parties."
+            ]
+          },
+          {
+            "title": "4. Job Application Data",
+            "body": [
+              "CVs and application documents are stored for the duration of the evaluation. Data shared with consent is not disclosed to third parties without authorisation."
+            ]
+          },
+          {
+            "title": "5. Retention and Transfers",
+            "body": [
+              "Visitor logs are retained for two years pursuant to Law No. 5651; contact requests are stored for the response period plus three years; job applications are kept for up to two years. No international transfer takes place unless legally mandatory."
+            ]
+          },
+          {
+            "title": "6. Data Subject Rights",
+            "body": [
+              "Under PDPL Article 11 you have the right to learn whether data is processed, to access, correct, erase and object. Applications can be made through the methods described on the Data Subject Application page and will be answered within 30 days."
+            ]
+          },
+          {
+            "title": "7. Updates",
+            "body": [
+              "This notice may be updated when necessary. The most recent version is available at {siteUrl}/kvkk/aydinlatma."
+            ]
+          }
+        ]
+      },
+      "cerezPolitikasi": {
+        "metaTitle": "Cookie Policy",
+        "metaDescription": "Cookie categories used on the Kaynar Law Firm website and management methods.",
+        "title": "Cookie Policy",
+        "description": "The cookie categories used on the Kaynar Law Firm website, their purposes and management methods are outlined below.",
+        "sections": [
+          {
+            "title": "1. What Are Cookies?",
+            "body": [
+              "Cookies are small text files stored on your browser by the websites you visit. They may be used to improve site performance, ensure security and remember your preferences."
+            ]
+          },
+          {
+            "title": "2. Cookie Categories",
+            "body": [
+              "We use the following cookie categories on our site:"
+            ],
+            "list": [
+              "Necessary Cookies: Required for secure sessions and core functionality. They cannot be disabled.",
+              "Analytics Cookies: Provide anonymous measurements for traffic and usage analysis. Default: Disabled. They are only activated with your consent.",
+              "Functional Cookies: Needed to display third-party services such as maps. Default: Disabled. They become active once you approve them."
+            ]
+          },
+          {
+            "title": "3. Management",
+            "body": [
+              "You may select your cookie preferences during your first visit. You can later update them via the “Cookie Preferences” link at the bottom of the page or manage cookies directly through your browser settings."
+            ]
+          },
+          {
+            "title": "4. Retention",
+            "body": [
+              "Cookie preferences are stored for 12 months from the date of your selection and renewed afterwards."
+            ]
+          },
+          {
+            "title": "5. Updates",
+            "body": [
+              "This policy may be revised due to legal or technical requirements. Updates take effect upon publication on our website."
+            ]
+          }
+        ]
+      },
+      "veriSahibiBasvuru": {
+        "metaTitle": "Data Subject Application Process",
+        "metaDescription": "Procedures and methods for PDPL data subject applications.",
+        "title": "Data Subject Application Process",
+        "description": "Individuals whose data is processed may submit their requests regarding personal data in accordance with the PDPL (Law No. 6698) using the methods described below.",
+        "sections": [
+          {
+            "title": "1. Application Methods",
+            "body": [
+              "Applications may be submitted using the following methods:"
+            ],
+            "list": [
+              "In-person applications with a wet-ink signature",
+              "Applications sent via notary",
+              "Applications submitted through a Registered Electronic Mail (KEP) address with secure electronic signature",
+              "Scanning the signed application and sending it with secure electronic signature to info@kaynar.av.tr"
+            ]
+          },
+          {
+            "title": "2. Required Information",
+            "body": [
+              "Applications should include the following information:"
+            ],
+            "list": [
+              "Name, surname and signature",
+              "Turkish ID number or passport number",
+              "Residential or workplace address for notification",
+              "If available, e-mail address, phone and fax for notification",
+              "Description of the request together with supporting information or documents"
+            ]
+          },
+          {
+            "title": "3. Response Time",
+            "body": [
+              "Applications are finalised within 30 days under PDPL Article 13. Additional information may be requested depending on the nature of the request. Fees are determined in accordance with the PDPL and the Communiqué on the Principles and Procedures of Application to the Data Controller."
+            ]
+          },
+          {
+            "title": "4. Rejection of the Application",
+            "body": [
+              "If the request is rejected, a reasoned response is provided in writing or electronically. You may file a complaint with the Personal Data Protection Authority within 30 days of receiving our reply."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "practiceAreaDetails": {
+    "common": {
+      "backToList": "Back to Practice Areas",
+      "scopeTitle": "Scope of Services",
+      "processTitle": "Process Steps",
+      "faqTitle": "Frequently Asked Questions",
+      "disclaimer": "This page is for general information only and does not constitute legal advice. Every matter has its own circumstances; please contact us for an assessment of your specific case."
+    },
+    "criminal": {
+      "name": "Criminal Law",
+      "tagline": "Defense and counsel services",
+      "meta": {
+        "title": "Criminal Law",
+        "description": "Protecting rights in criminal proceedings requires meticulous planning and procedural compliance at every stage."
+      },
+      "description": [
+        "Protecting rights in criminal proceedings requires meticulous planning and procedural compliance at every stage.",
+        "We provide defense services throughout the investigation and prosecution phases."
+      ],
+      "scope": [
+        "Monitoring statements during investigation and supervising law-enforcement procedures",
+        "Designing the defense strategy during prosecution",
+        "Filing applications regarding detention, judicial control and protective measures",
+        "Assessing appellate remedies, cassation and extraordinary legal avenues",
+        "Pursuing settlement and suspension of pronouncement of the judgment",
+        "Seeking suspension of imprisonment and applying alternative sanctions"
+      ],
+      "process": [
+        {
+          "title": "Initial Assessment",
+          "description": "Analysing the file from legal and factual perspectives and reviewing the evidence"
+        },
+        {
+          "title": "Strategy Planning",
+          "description": "Structuring the defense approach and identifying legal grounds"
+        },
+        {
+          "title": "Hearing Process",
+          "description": "Representation at hearings, examination of witnesses and experts, and presentation of evidence"
+        },
+        {
+          "title": "Judgment Review",
+          "description": "Evaluating the court decision and planning appellate remedies"
+        },
+        {
+          "title": "Follow-up",
+          "description": "Managing post-judgment steps, enforcement and adaptation requests"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What does a lawyer do during the investigation stage?",
+          "answer": "We attend interrogations, review the file and submit the necessary petitions to safeguard rights. Clients are kept informed at every step of the process."
+        },
+        {
+          "question": "What is the deadline for challenging detention?",
+          "answer": "Objections must be filed within the time limits set out in the Criminal Procedure Code. A tailored plan is essential and urgent matters require swift action."
+        },
+        {
+          "question": "How long does the appeal process take?",
+          "answer": "The duration depends on the workload of the Court of Cassation and the specifics of the case. Exact time frames cannot be guaranteed in advance."
+        },
+        {
+          "question": "Can you guarantee the outcome?",
+          "answer": "Criminal litigation depends on many variables, so neither the result nor the timeline can be guaranteed. We do, however, present the most effective defense permitted by law."
+        }
+      ]
+    },
+    "family": {
+      "name": "Family Law",
+      "tagline": "Divorce, custody and maintenance services",
+      "meta": {
+        "title": "Family Law",
+        "description": "Divorce, custody, maintenance and matrimonial-property disputes must be handled with care and in full compliance with the law."
+      },
+      "description": [
+        "Family-law disputes require careful planning and strict adherence to statutory provisions.",
+        "We act in divorce, custody, maintenance and matrimonial-property matters, offering both litigation and advisory support."
+      ],
+      "scope": [
+        "Representation in divorce proceedings and liquidation of the matrimonial property regime",
+        "Custody, contact and maintenance claims",
+        "Applications for protective and restraining measures and their follow-up",
+        "Assessing disputes concerning the family home",
+        "Advising on engagement and pre-nuptial agreements",
+        "Legal assistance in matters of parentage, acknowledgement and adoption"
+      ],
+      "process": [
+        {
+          "title": "Initial Meeting",
+          "description": "Determining the overall framework of the file and analysing expectations"
+        },
+        {
+          "title": "Document Collection",
+          "description": "Compiling marriage certificates, title deeds, bank records and other evidence"
+        },
+        {
+          "title": "Litigation or Mediation",
+          "description": "Planning an uncontested or contested strategy and preparing submissions"
+        },
+        {
+          "title": "Hearing Monitoring",
+          "description": "Representation at hearings, presenting witnesses and submitting expert reports"
+        },
+        {
+          "title": "Decision and Follow-up",
+          "description": "Evaluating the judgment, pursuing appeals and initiating enforcement"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How long does a divorce case take?",
+          "answer": "Timelines depend on the court's workload, the scope of the file and the parties' approach. Uncontested divorces are resolved faster, but precise durations cannot be guaranteed."
+        },
+        {
+          "question": "Which documents are needed for an uncontested divorce?",
+          "answer": "A marriage certificate, identification, the settlement protocol and, depending on the file, documents showing assets. A detailed checklist is shared beforehand."
+        },
+        {
+          "question": "Can custody decisions be changed later on?",
+          "answer": "If new circumstances arise and the child's best interests require it, custody can be revisited. Supporting evidence such as social inquiry reports is important."
+        },
+        {
+          "question": "How is maintenance calculated?",
+          "answer": "Courts consider the parties' financial standing, lifestyle, the child's needs and other statutory criteria. Every case is evaluated on its own facts."
+        }
+      ]
+    },
+    "labor": {
+      "name": "Labor Law",
+      "tagline": "Reinstatement, compensation and workplace advisory",
+      "meta": {
+        "title": "Labor Law",
+        "description": "Rights and obligations in employment relationships must be monitored closely in light of legislative changes."
+      },
+      "description": [
+        "Employment relationships require close monitoring of rights and duties in light of evolving regulations.",
+        "We represent both employees and employers in litigation and provide ongoing advisory services."
+      ],
+      "scope": [
+        "Drafting, reviewing and managing employment contracts and termination procedures",
+        "Reinstatement claims and challenges to unlawful dismissals",
+        "Actions for severance, notice and paid-leave compensation",
+        "Advisory on occupational health and safety compliance",
+        "Disputes concerning social-security premiums and administrative fines",
+        "Assessing collective bargaining agreements and trade-union matters"
+      ],
+      "process": [
+        {
+          "title": "File Review",
+          "description": "Analysing employment contracts, payroll records, correspondence and termination notices"
+        },
+        {
+          "title": "Mediation",
+          "description": "Submitting the mandatory mediation application and managing negotiations"
+        },
+        {
+          "title": "Litigation",
+          "description": "Filing lawsuits before labour courts and preparing pleadings"
+        },
+        {
+          "title": "Hearings and Evidence",
+          "description": "Presenting witnesses, expert examinations and documentary evidence"
+        },
+        {
+          "title": "Judgment and Enforcement",
+          "description": "Evaluating the judgment, pursuing appeals and initiating enforcement"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "When is mediation mandatory?",
+          "answer": "For employee receivables and reinstatement claims, mediation is mandatory before filing a lawsuit. If mediation fails, a lawsuit may be filed with the final report."
+        },
+        {
+          "question": "What should a termination notice include?",
+          "answer": "The reason for termination must be clear and specific, statutory notice periods must be observed, and required documents such as payrolls and employment certificates must be delivered."
+        },
+        {
+          "question": "What is the timeline for reinstatement claims?",
+          "answer": "An employee must apply to mediation within one month of notification and file suit within two weeks if mediation fails. These deadlines are strict."
+        },
+        {
+          "question": "When does an employee earn severance pay?",
+          "answer": "Severance is due if the employee has worked at least one year and the contract ends for qualifying reasons such as retirement, death, military service or employer termination."
+        }
+      ]
+    },
+    "commercial": {
+      "name": "Commercial Law",
+      "tagline": "Advisory on corporate and commercial transactions",
+      "meta": {
+        "title": "Commercial Law",
+        "description": "Corporate and commercial matters require compliance management, contract governance and effective dispute resolution."
+      },
+      "description": [
+        "Corporate and commercial relations demand legal compliance, structured contract management and efficient dispute resolution.",
+        "We advise on company formation, mergers and acquisitions, negotiable instruments and receivable management."
+      ],
+      "scope": [
+        "Establishing companies, drafting articles of association and managing general assemblies",
+        "Share transfers, shareholders' agreements and partnership restructurings",
+        "Preparing, negotiating and updating commercial contracts",
+        "Pursuing commercial receivables and negotiable-instrument disputes",
+        "Reviewing corporate books and records, performing compliance audits",
+        "Handling mergers, spin-offs, conversions and mandatory filings"
+      ],
+      "process": [
+        {
+          "title": "Situation Analysis",
+          "description": "Assessing the company structure, requirements and legal framework"
+        },
+        {
+          "title": "Document Preparation",
+          "description": "Preparing or revising agreements and corporate documents"
+        },
+        {
+          "title": "Negotiation",
+          "description": "Leading negotiations between the parties and securing consensus"
+        },
+        {
+          "title": "Implementation",
+          "description": "Managing signature, registration and notification stages"
+        },
+        {
+          "title": "Ongoing Compliance",
+          "description": "Monitoring day-to-day operations to ensure legal compliance"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Should company agreements be standardised?",
+          "answer": "Every company has different needs. Template agreements can serve as a starting point, but most situations require tailoring to the sector and business model."
+        },
+        {
+          "question": "What are the critical steps in mergers and acquisitions?",
+          "answer": "Financial and legal due diligence, contract negotiations, filings with the competition authority and post-closing integration are key."
+        },
+        {
+          "question": "How are commercial receivables pursued?",
+          "answer": "We first consider settlement or restructuring; if that fails we commence enforcement or litigation, selecting the most suitable method for the case."
+        },
+        {
+          "question": "How can general-assembly resolutions be challenged?",
+          "answer": "If resolutions breach the law or articles, shareholders may file for annulment or nullity within statutory time limits. Timing and evidence must be carefully managed."
+        }
+      ]
+    },
+    "enforcement": {
+      "name": "Enforcement and Bankruptcy",
+      "tagline": "Debt collection and insolvency services",
+      "meta": {
+        "title": "Enforcement and Bankruptcy",
+        "description": "Debt and receivable matters must be conducted in accordance with enforcement and insolvency legislation."
+      },
+      "description": [
+        "Debt and receivable processes demand strict adherence to enforcement and insolvency law.",
+        "We support clients in enforcement proceedings, attachments, bankruptcy and concordat."
+      ],
+      "scope": [
+        "Initiating and following up non-judgment and judgment-based enforcement files",
+        "Managing attachment proceedings, creditor ranking and distribution",
+        "Planning bankruptcy, postponement of bankruptcy and concordat procedures",
+        "Negotiating settlements between debtors and creditors and restructuring debts",
+        "Handling objections, complaints and negative declaratory actions",
+        "Advising on enforcement denial compensation and third-party claims"
+      ],
+      "process": [
+        {
+          "title": "Receivable Assessment",
+          "description": "Evaluating receivables or debts with supporting documents and legal analysis"
+        },
+        {
+          "title": "Commencing Proceedings",
+          "description": "Choosing the appropriate track and filing the necessary applications"
+        },
+        {
+          "title": "Attachment and Sale",
+          "description": "Planning attachment steps and overseeing sale procedures"
+        },
+        {
+          "title": "Objection Phase",
+          "description": "Managing objections and complaints and representing clients at hearings"
+        },
+        {
+          "title": "Outcome and Follow-up",
+          "description": "Implementing results, monitoring enforcement files and reporting"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How long does enforcement take?",
+          "answer": "It depends on the nature of the proceedings, the debtor's attitude and the workload of the office. While no exact timeframe can be guaranteed, we keep the file under close follow-up."
+        },
+        {
+          "question": "How does the concordat process work?",
+          "answer": "A petition and restructuring project are submitted; the court grants provisional relief and a commissioner oversees the process. Creditors' approval and court confirmation are required."
+        },
+        {
+          "question": "How is the debtor's asset position determined?",
+          "answer": "We rely on official records, formal inquiries and, where needed, court-ordered discovery. Illegal means are never used; we act strictly within the law."
+        },
+        {
+          "question": "Can enforcement be opposed?",
+          "answer": "Debtors may object within seven days of service. The creditor may then seek removal of the objection or file a lawsuit."
+        }
+      ]
+    },
+    "administrative": {
+      "name": "Administrative Law",
+      "tagline": "Annulment, full remedy and administrative action",
+      "meta": {
+        "title": "Administrative Law",
+        "description": "Disputes arising from administrative acts must be assessed accurately and pursued before the administrative judiciary in accordance with the law."
+      },
+      "description": [
+        "Administrative disputes require accurate assessment and strict compliance with administrative-procedure rules.",
+        "We provide litigation and advisory services in matters involving public authorities."
+      ],
+      "scope": [
+        "Planning and pursuing annulment and full-remedy actions against administrative acts",
+        "Assessing requests for stays of execution and interim measures",
+        "Managing public-procurement challenges and contract disputes",
+        "Defense in disciplinary procedures and actions concerning civil-service status",
+        "Handling zoning, expropriation and municipal-law matters",
+        "Challenging administrative fines and addressing tax and customs disputes"
+      ],
+      "process": [
+        {
+          "title": "Service and Deadline Analysis",
+          "description": "Determining the date of service of the administrative act and calculating filing deadlines"
+        },
+        {
+          "title": "Administrative Application",
+          "description": "Considering mandatory hierarchical complaints or amicable settlement avenues"
+        },
+        {
+          "title": "Filing Suit",
+          "description": "Preparing and submitting the statement of claim for annulment or full-remedy actions"
+        },
+        {
+          "title": "Hearing Stage",
+          "description": "Submitting expert requests, site inspections, witness testimony and written statements"
+        },
+        {
+          "title": "Appeal and Cassation",
+          "description": "Planning appeals to regional administrative courts and the Council of State"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How critical are deadlines in administrative cases?",
+          "answer": "The Administrative Procedure Law imposes strict deadlines. Actions generally must be filed within 30 or 60 days of service. Missing a deadline can lead to dismissal."
+        },
+        {
+          "question": "What is a stay of execution?",
+          "answer": "It temporarily halts the execution of an administrative act. It may be granted when irreparable harm and serious indications of illegality exist, preventing enforcement until a final decision."
+        },
+        {
+          "question": "Is an administrative application mandatory before suing?",
+          "answer": "Certain matters—such as some tax and customs disputes—require a preliminary administrative application. The applicable legislation is assessed for each case."
+        },
+        {
+          "question": "What are the time limits for procurement objections?",
+          "answer": "Under the Public Procurement Law, objections must be filed within ten days. Decisions by the Public Procurement Authority may be challenged before administrative courts within thirty days."
+        }
+      ]
+    },
+    "real_estate": {
+      "name": "Lease Law",
+      "tagline": "Evictions, rent determination and dispute resolution",
+      "meta": {
+        "title": "Lease Law",
+        "description": "Lease disputes must be managed carefully and in line with the Turkish Code of Obligations and sector-specific legislation."
+      },
+      "description": [
+        "Lease relationships require careful planning and compliance with the Turkish Code of Obligations and special legislation.",
+        "We support clients with evictions, rent determination and other tenancy disputes."
+      ],
+      "scope": [
+        "Planning eviction lawsuits and preparing tenant defenses",
+        "Actions for rent determination, adjustment and adaptation",
+        "Advising on obligations relating to use, maintenance and repair of the property",
+        "Applying special rules on residential and commercial leases",
+        "Drafting and negotiating lease agreements",
+        "Handling deposits, security payments and guarantee structures"
+      ],
+      "process": [
+        {
+          "title": "Contract Review",
+          "description": "Examining the lease agreement and notices in detail and providing legal analysis"
+        },
+        {
+          "title": "Notice Assessment",
+          "description": "Evaluating notices or termination letters and developing a response strategy"
+        },
+        {
+          "title": "Mediation or Litigation",
+          "description": "Initiating mediation or court proceedings and preparing submissions"
+        },
+        {
+          "title": "Hearing Process",
+          "description": "Monitoring hearings, presenting evidence and examining witnesses"
+        },
+        {
+          "title": "Appeal",
+          "description": "Pursuing appellate remedies and monitoring subsequent steps"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "When can an eviction lawsuit be filed?",
+          "answer": "Statutory eviction grounds are limited, such as non-payment of rent, improper use or demolition. Each file is evaluated according to its circumstances."
+        },
+        {
+          "question": "How are rent increases calculated?",
+          "answer": "Annual increases are determined by the Code of Obligations and contractual provisions. The law sets a ceiling and increases above that ceiling are invalid."
+        },
+        {
+          "question": "How can a tenant challenge an eviction order?",
+          "answer": "Appeals can be filed within statutory time limits after service of the decision. It is crucial to observe deadlines and obtain legal advice."
+        },
+        {
+          "question": "What happens when the lease term ends?",
+          "answer": "The tenant must vacate at the end of the term. Legal procedures must be observed—an eviction lawsuit may be required to enforce the decision."
+        }
+      ]
+    },
+    "contracts": {
+      "name": "Contracts Law",
+      "tagline": "Contract drafting and negotiation services",
+      "meta": {
+        "title": "Contracts Law",
+        "description": "Contractual relationships require sound risk assessment, compliance with legislation and a balanced allocation of obligations."
+      },
+      "description": [
+        "Contracts must be drafted with a clear understanding of risks, legal compliance and balance between the parties.",
+        "We provide legal support for commercial agreements, distributorships, franchising and other collaborative models."
+      ],
+      "scope": [
+        "Preparing and revising contract drafts",
+        "Managing commercial negotiations and supporting stakeholder meetings",
+        "Assessing compliance with the Turkish Code of Obligations and special legislation",
+        "Planning contract management and implementation processes",
+        "Revising agreements and preparing riders where discrepancies arise",
+        "Drafting distributorship, franchising and technology-transfer agreements"
+      ],
+      "process": [
+        {
+          "title": "Needs Analysis",
+          "description": "Identifying desired rights and obligations"
+        },
+        {
+          "title": "Draft Preparation",
+          "description": "Preparing the draft agreement or reviewing the existing contract"
+        },
+        {
+          "title": "Negotiation Plan",
+          "description": "Developing the negotiation strategy and leading discussions"
+        },
+        {
+          "title": "Final Review",
+          "description": "Completing pre-signing and pre-implementation control lists"
+        },
+        {
+          "title": "Monitoring",
+          "description": "Updating and reporting throughout contract performance"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Which clauses should be included in a contract?",
+          "answer": "Clauses are determined by the parties' positions, legislation and risk analysis. Standard lists rarely cover every scenario; each contract requires bespoke assessment."
+        },
+        {
+          "question": "How should the negotiation process be structured?",
+          "answer": "We prioritise key issues, analyse the counterparty's expectations and maintain thorough meeting notes, making use of professional negotiation techniques."
+        },
+        {
+          "question": "What happens if inconsistencies are found?",
+          "answer": "Relevant clauses are revised, alternative arrangements are proposed and, where needed, supplemental protocols are prepared. Regulatory compliance remains paramount."
+        },
+        {
+          "question": "What if a contract is breached?",
+          "answer": "Depending on the breach, compensation, termination or specific performance claims may be filed. Liquidated damages and compensation requests are assessed in light of the contract."
+        }
+      ]
+    },
+    "international": {
+      "name": "Foreigners and Arbitration Law",
+      "tagline": "International disputes and arbitration",
+      "meta": {
+        "title": "Foreigners and Arbitration Law",
+        "description": "Internationally connected disputes and arbitration require adherence to multilateral conventions, private international law rules and arbitration legislation."
+      },
+      "description": [
+        "Cross-border disputes and arbitration proceedings must comply with multilateral conventions, conflict-of-law rules and arbitration legislation.",
+        "We support foreign investments, arbitration proceedings and international commercial disputes."
+      ],
+      "scope": [
+        "Advising on the legal status of foreigners in Türkiye, including residence and work permits",
+        "Legal counsel on international commercial contracts and foreign investments",
+        "Initiating domestic and international arbitration and enforcing arbitral awards",
+        "Applying conflict-of-law rules and recognising foreign court judgments",
+        "Establishing branches and conducting business activities in Türkiye for foreign companies",
+        "Handling international family-law disputes and custody proceedings"
+      ],
+      "process": [
+        {
+          "title": "Contract Review",
+          "description": "Examining contracts and arbitration clauses in detail"
+        },
+        {
+          "title": "Jurisdiction Assessment",
+          "description": "Identifying the competent legal system and forum"
+        },
+        {
+          "title": "Arbitration Filing",
+          "description": "Commencing arbitration or litigation and forming the arbitral tribunal"
+        },
+        {
+          "title": "Dispute Examination",
+          "description": "Analysing the merits, presenting evidence and following hearings"
+        },
+        {
+          "title": "Enforcement",
+          "description": "Enforcing arbitral or court decisions and fulfilling ensuing obligations"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does arbitration differ from court litigation?",
+          "answer": "Parties appoint the tribunal, the process remains confidential and is generally more flexible. Arbitral awards are easier to enforce internationally under the New York Convention."
+        },
+        {
+          "question": "Can foreign court decisions be recognised in Türkiye?",
+          "answer": "Recognition and enforcement follow international treaties or reciprocity principles. Each decision undergoes a specific review; recognition is not automatic."
+        },
+        {
+          "question": "Which law governs international contracts?",
+          "answer": "The governing law is determined by the parties' choice or the system most closely connected to the contract. Choosing the applicable law is a strategic step."
+        },
+        {
+          "question": "May foreigners acquire real estate in Türkiye?",
+          "answer": "Foreigners may acquire property subject to reciprocity and statutory limitations. Restrictions apply in military and special-security zones."
+        }
+      ]
+    }
+  }
+}

@@ -3,6 +3,9 @@ import AktuelClient from './AktuelClient';
 import { PAGE_COPY } from './pageCopy';
 import { buildPageMetadata } from '@/lib/seo';
 import { locales, type Locale } from '@/i18n';
+import { Topbar } from '@/components/layout/Topbar';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
 
 export const dynamic = 'force-static';
 
@@ -22,5 +25,12 @@ export function generateMetadata({ params }: PageProps): Metadata {
 
 export default function Page({ params }: PageProps) {
   const locale = resolveLocale(params.locale);
-  return <AktuelClient locale={locale} />;
+  return (
+    <>
+      <Topbar />
+      <Navbar />
+      <AktuelClient locale={locale} />
+      <Footer />
+    </>
+  );
 }

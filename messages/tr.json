@@ -3,12 +3,17 @@
     "about": "Hakkımızda",
     "practiceAreas": "Çalışma Alanları",
     "team": "Ekibimiz",
+    "references": "Referanslar",
     "news": "Aktüel",
     "articles": "Makaleler",
     "contact": "İletişim",
     "appointment": "Randevu Al",
     "menuToggle": "Menüyü aç/kapat",
-    "brandSubtitle": "Avukatlık Bürosu"
+    "brandSubtitle": "Avukatlık Bürosu",
+    "mainMenuAria": "Ana menü",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "services": "Hizmetlerimiz"
   },
   "hero": {
     "title": "Hakkınızı, usule uygun ve kararlılıkla savunuyoruz.",
@@ -59,6 +64,12 @@
     "label": "Çalışma Alanlarımız",
     "title": "Uzmanlık Alanları",
     "description": "Geniş yelpazede hukuki destek sağlıyoruz",
+    "slider": {
+      "previous": "Önceki kart",
+      "next": "Sonraki kart",
+      "openArea": "{area} çalışma alanını aç",
+      "hint": "Kartları kaydırarak çalışma alanlarımızı inceleyebilirsiniz."
+    },
     "viewAll": "Tümünü Gör",
     "criminal": "Ceza Hukuku",
     "criminalDesc": "Suç ve ceza davalarında temsil",
@@ -121,12 +132,16 @@
     "label": "Ekibimiz",
     "title": "Avukatlarımız",
     "description": "Deneyimli ve uzman kadromuzla hizmetinizdeyiz",
+    "viewAll": "Tümünü Gör",
     "moreCount": "+{count} daha",
     "card": {
       "role": "Avukat",
       "specialties": "Uzmanlık Alanları",
       "about": "Hakkında",
       "contact": "İletişim"
+    },
+    "detail": {
+      "backToList": "Ekibe geri dön"
     }
   },
   "testimonials": {
@@ -151,6 +166,50 @@
       }
     ]
   },
+  "references": {
+    "metadata": {
+      "title": "Referanslarımız",
+      "description": "Türkiye’nin önde gelen kuruluşlarının Kaynar Hukuk’a duyduğu güveni, müvekkil yorumları ve başarı göstergeleriyle keşfedin."
+    },
+    "hero": {
+      "title": "Referanslarımız",
+      "subtitle": "Türkiye’nin önde gelen kuruluşlarına hukuki danışmanlık sunuyoruz."
+    },
+    "logos": {
+      "title": "Birlikte Çalıştığımız Kurumlar",
+      "subtitle": "Farklı sektörlerden paydaşlarımızla uzun soluklu iş birlikleri kuruyoruz."
+    },
+    "testimonials": {
+      "title": "Müvekkillerimizin Güveni",
+      "subtitle": "Çözümlerimizi sahada deneyimleyen liderlerin değerlendirmeleri",
+      "items": {
+        "ayseDemir": "Kaynar Hukuk, karmaşık sigorta uyuşmazlıklarımızda stratejik yaklaşımıyla kısa sürede sonuç almamızı sağladı. Her adımda kurumsal standartlarımızı gözettiler.",
+        "mertOzkan": "İhale süreçlerinden sözleşme denetimine kadar geniş bir kapsamda destek aldık. Ekip, zaman baskısı altında dahi titiz ve çözüm odaklı çalıştı.",
+        "selinKaya": "Çalışma hukukuna ilişkin tüm danışmanlık ihtiyaçlarımızda doğru risk analizleri ve pratik öneriler sundular. Yönetim kurulumuzun güvenilir danışmanı oldular.",
+        "leventAkar": "Bankacılık mevzuatına hakimiyetleri ve hızlı geri dönüşleriyle, denetim dönemlerinde bizi büyük yükten kurtardılar. Şeffaf iletişimleri takdire değer.",
+        "dilaraSahin": "Start-up yatırım turlarımızda yatırımcı sözleşmelerini titizlikle yöneterek haklarımızı korudular. Teknoloji sektörünün ihtiyaçlarını anlıyorlar.",
+        "cemBasaran": "Uluslararası taşımacılıkta karşılaştığımız hukuki riskleri hızlıca analiz edip uygulanabilir aksiyon planları sundular. Süreç boyunca ulaşılabilir kaldılar."
+      }
+    },
+    "stats": {
+      "title": "Öne Çıkan Başarı Göstergeleri",
+      "cases": "Tamamlanan dava ve danışmanlık dosyası",
+      "satisfaction": "Müvekkil memnuniyet skoru",
+      "industries": "Hizmet verdiğimiz sektör",
+      "years": "Sürdürülebilir iş birliği yılı"
+    },
+    "badges": {
+      "title": "Güven ve Yetkinlik Rozetlerimiz",
+      "iso": "Bilgi güvenliği yönetim süreçleri düzenli olarak denetlenir.",
+      "bar": "Türkiye Barolar Birliği ve İstanbul Barosu üyeliğiyle etik standartlara bağlılık.",
+      "icc": "Milletlerarası Ticaret Odası tahkim unda temsil ve danışmanlık deneyimi.",
+      "compliance": "Kurumsal uyum ve iç denetim programları için yıllık raporlama desteği."
+    },
+    "cta": {
+      "title": "Ücretsiz İlk Değerlendirme İçin İletişime Geçin",
+      "button": "İletişim Kurun"
+    }
+  },
   "contact": {
     "label": "İletişim",
     "title": "Bizimle iletişime geçin",
@@ -161,11 +220,23 @@
       "phone": "Telefon",
       "subject": "Konu",
       "message": "Mesaj",
-      "namePlaceholder": "Adınız ve soyadınız",
+      "namePlaceholder": "Adınızı ve soyadınızı resmi yazım ile yazınız",
       "emailPlaceholder": "ornek@email.com",
       "phonePlaceholder": "+90 555 123 45 67",
-      "subjectPlaceholder": "Hangi konuda yardım istiyorsunuz?",
-      "messagePlaceholder": "Lütfen durumunuzu kısaca açıklayın...",
+      "subjectPlaceholder": "Hangi konuda bilgi veya destek talep ediyorsunuz?",
+      "messagePlaceholder": "Lütfen olayın özetini paylaşın; tarih ve taraf bilgilerini belirtin...",
+      "courtPlaceholder": "Başvuru yapılan makamı veya mahkemeyi belirtiniz...",
+      "lawAreaPlaceholder": "Hukuk alanını seçiniz (opsiyonel)",
+      "factsPlaceholder": "Olayın gelişimini, tarih ve taraf bilgilerini özetleyiniz...",
+      "requestPlaceholder": "Talep ve istemlerinizi madde madde yazınız...",
+      "messagePlaceholderPetition": "Ek bilgi veya özel notlarınızı buraya yazabilirsiniz...",
+      "namePlaceholderPetition": "Adınızı ve soyadınızı resmi yazım ile giriniz",
+      "emailPlaceholderPetition": "ornek@email.com",
+      "phonePlaceholderPetition": "+90 5xx xxx xx xx",
+      "subjectPlaceholderPetition": "Dilekçe başlığı / konu",
+      "requiredField": "Bu alan zorunludur.",
+      "emailInvalid": "Geçerli bir e-posta adresi giriniz.",
+      "validationError": "Lütfen zorunlu alanları kontrol ediniz.",
       "kvkkConsent": "'ni okudum ve kişisel verilerimin işlenmesini kabul ediyorum.",
       "kvkkLink": "KVKK Aydınlatma Metni",
       "newsletter": "Bülten ve duyuru almak istiyorum.",
@@ -174,6 +245,18 @@
       "success": "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
       "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
       "required": "*"
+    },
+    "petition": {
+      "title": "Dilekçe",
+      "court": "Başvuru Makamı/Mahkeme",
+      "subject": "Konu",
+      "area": "Hukuk Alanı",
+      "facts": "Olayın Özeti",
+      "request": "Talep/İstem",
+      "send": "Gönder",
+      "thanks": "Teşekkürler, mesajınız alındı.",
+      "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+      "print": "Yazdır"
     },
     "info": {
       "address": "Adres",
@@ -199,7 +282,10 @@
     "source": "Kaynak",
     "readFull": "Haberin tamamını oku",
     "tags": "Etiketler",
-    "disclaimer": "Bu haber özet bilgi amaçlıdır. Detaylı ve güncel bilgi için ilgili resmi kaynakları kontrol ediniz."
+    "disclaimer": "Bu haber özet bilgi amaçlıdır. Detaylı ve güncel bilgi için ilgili resmi kaynakları kontrol ediniz.",
+    "loadMore": "Daha fazlasını göster",
+    "loadingMore": "Yükleniyor...",
+    "resultsFound": "sonuç bulundu"
   },
   "articles": {
     "backToList": "Makaleler listesine dön",
@@ -210,9 +296,27 @@
     "readMore": "Devamını Oku",
     "learnMore": "Daha Fazla",
     "viewDetails": "Detayları Gör",
+    "quickView": "Hızlı Önizleme",
     "close": "Kapat",
     "back": "Geri",
-    "changeLanguage": "Dili değiştir"
+    "changeLanguage": "Dili değiştir",
+    "siteName": "Kaynar Hukuk",
+    "logoAlt": "Kaynar Hukuk Bürosu Logo",
+    "homeLinkAria": "Kaynar Hukuk Bürosu ana sayfa",
+    "scrollToTop": "Yukarı dön"
+  },
+  "animation": {
+    "label": "Animasyon",
+    "settingsAria": "Animasyon yoğunluğu ayarları",
+    "settingsTitle": "Animasyon yoğunluğu",
+    "menuHeading": "Animasyon Yoğunluğu",
+    "density": {
+      "off": "Kapalı",
+      "lite": "Az",
+      "rich": "Orta",
+      "max": "Çok"
+    },
+    "reducedMotionWarning": "⚠️ Azaltılmış hareket tercihi algılandı"
   },
   "cookies": {
     "banner": {
@@ -258,6 +362,11 @@
     ]
   },
   "footer": {
+    "about": "Kaynar Hukuk Bürosu",
+    "brandTagline": "Disiplinli takip, şeffaf danışmanlık",
+    "aboutDesc": "Kaynar Hukuk Bürosu, ceza, aile, iş ve ticaret hukukunda uzmanlaşmış ekibiyle stratejik ve şeffaf çözümler sunar.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim Bilgileri",
     "disclaimer": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir.",
     "cookiePreferences": "Çerez Tercihleri",
     "secondaryNotice": "Bu site bilgilendirme amaçlıdır; hukuki danışmanlık değildir.",
@@ -265,6 +374,7 @@
     "phoneLabel": "Telefon",
     "emailLabel": "E-posta",
     "linksAria": "Alt menü",
+    "disclaimerText": "Bu internet sitesindeki içerikler bilgilendirme amaçlıdır; hukuki danışmanlık değildir.",
     "copyright": "© {year} Kaynar Hukuk Bürosu."
   },
   "filters": {
@@ -351,12 +461,15 @@
         "title": "Makaleler",
         "description": "Hukuk alanlarına göre filtrelenebilir makaleler."
       },
-      "list": {
-        "heading": "Makaleler",
-        "subtitle": "Uzmanlarımızdan güncel değerlendirmeler",
-        "description": "Hukuk makalelerimizi tarih ve alanlara göre filtreleyin.",
-        "results": "{count} sonuç bulundu"
-      },
+    "list": {
+      "heading": "Makaleler",
+      "subtitle": "Uzmanlarımızdan güncel değerlendirmeler",
+      "description": "Hukuk makalelerimizi tarih ve alanlara göre filtreleyin.",
+      "results": "{count} sonuç bulundu",
+      "searchPlaceholder": "Makale ara...",
+      "loadMore": "Daha fazla yükle",
+      "loadingMore": "Yükleniyor..."
+    },
       "empty": {
         "title": "Sonuç bulunamadı",
         "description": "Farklı filtreler deneyerek arama yapabilirsiniz."
@@ -365,7 +478,9 @@
         "back": "Makaleler listesine dön",
         "disclaimer": "Genel bilgilendirme, hukuki görüş değildir.",
         "generalNotice": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir.",
-        "notFoundTitle": "Makale bulunamadı"
+        "notFoundTitle": "Makale bulunamadı",
+        "share": "Paylaş",
+        "contents": "İçindekiler"
       }
     },
     "team": {

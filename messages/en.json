@@ -3,12 +3,17 @@
     "about": "About Us",
     "practiceAreas": "Practice Areas",
     "team": "Our Team",
+    "references": "References",
     "news": "News",
     "articles": "Articles",
     "contact": "Contact",
     "appointment": "Book Appointment",
     "menuToggle": "Toggle menu",
-    "brandSubtitle": "Law Firm"
+    "brandSubtitle": "Law Firm",
+    "mainMenuAria": "Main menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "services": "Our Services"
   },
   "hero": {
     "title": "We defend your rights with determination and due process.",
@@ -59,6 +64,12 @@
     "label": "Our Practice Areas",
     "title": "Areas of Expertise",
     "description": "We provide legal support in a wide range of areas",
+    "slider": {
+      "previous": "Previous card",
+      "next": "Next card",
+      "openArea": "Open details for {area}",
+      "hint": "Swipe through the cards to explore our practice areas."
+    },
     "viewAll": "View All",
     "criminal": "Criminal Law",
     "criminalDesc": "Representation in crime and punishment cases",
@@ -121,12 +132,16 @@
     "label": "Our Team",
     "title": "Our Attorneys",
     "description": "At your service with our experienced and expert staff",
+    "viewAll": "View All",
     "moreCount": "+{count} more",
     "card": {
       "role": "Attorney",
       "specialties": "Practice Areas",
       "about": "About",
       "contact": "Contact"
+    },
+    "detail": {
+      "backToList": "Back to team"
     }
   },
   "testimonials": {
@@ -151,6 +166,50 @@
       }
     ]
   },
+  "references": {
+    "metadata": {
+      "title": "Our References",
+      "description": "Discover why leading organisations across Türkiye trust Kaynar Hukuk through client stories, results, and credentials."
+    },
+    "hero": {
+      "title": "Our References",
+      "subtitle": "We provide legal counsel to Türkiye’s leading organisations."
+    },
+    "logos": {
+      "title": "Clients We Support",
+      "subtitle": "Building lasting partnerships across diverse industries."
+    },
+    "testimonials": {
+      "title": "Trusted by Our Clients",
+      "subtitle": "Insights from leaders who rely on our legal guidance",
+      "items": {
+        "ayseDemir": "Kaynar Hukuk delivered swift resolutions for our most complex insurance disputes thanks to their strategic insight. They honoured our corporate standards at every step.",
+        "mertOzkan": "From tender processes to contract audits, we received comprehensive support. Even under tight deadlines, the team remained meticulous and solution oriented.",
+        "selinKaya": "Their labour-law advisory combines accurate risk analysis with pragmatic guidance. They have become the trusted adviser to our board.",
+        "leventAkar": "With their command of banking regulations and rapid response times, they relieved us of a major burden during audit season. Their transparent communication stands out.",
+        "dilaraSahin": "During our startup funding rounds they protected our interests by managing investor agreements with precision. They understand the needs of the tech sector.",
+        "cemBasaran": "They quickly assessed the legal risks we faced in international logistics and delivered actionable plans. The team stayed accessible throughout."
+      }
+    },
+    "stats": {
+      "title": "Key Results at a Glance",
+      "cases": "Completed litigation and advisory matters",
+      "satisfaction": "Client satisfaction score",
+      "industries": "Industries served",
+      "years": "Years of sustained partnerships"
+    },
+    "badges": {
+      "title": "Credentials & Assurances",
+      "iso": "Information security management processes audited regularly.",
+      "bar": "Committed to ethical standards with Union of Turkish Bar Associations membership.",
+      "icc": "Experience representing clients before ICC arbitration panels.",
+      "compliance": "Annual reporting support for corporate compliance programmes."
+    },
+    "cta": {
+      "title": "Contact Us for a Complimentary Initial Assessment",
+      "button": "Contact Us"
+    }
+  },
   "contact": {
     "label": "Contact",
     "title": "Get in touch with us",
@@ -161,11 +220,23 @@
       "phone": "Phone",
       "subject": "Subject",
       "message": "Message",
-      "namePlaceholder": "Your name and surname",
+      "namePlaceholder": "Enter your full legal name",
       "emailPlaceholder": "example@email.com",
       "phonePlaceholder": "+90 555 123 45 67",
-      "subjectPlaceholder": "What do you need help with?",
-      "messagePlaceholder": "Please briefly describe your situation...",
+      "subjectPlaceholder": "What is the subject of your request?",
+      "messagePlaceholder": "Summarise your matter; include key dates and parties...",
+      "courtPlaceholder": "Specify the authority or court you are addressing...",
+      "lawAreaPlaceholder": "Select the legal field (optional)",
+      "factsPlaceholder": "Summarise the facts, chronology, and key details...",
+      "requestPlaceholder": "Outline the relief or actions you request...",
+      "messagePlaceholderPetition": "Add any additional notes or supporting details...",
+      "namePlaceholderPetition": "Enter your full legal name",
+      "emailPlaceholderPetition": "example@email.com",
+      "phonePlaceholderPetition": "+90 5xx xxx xx xx",
+      "subjectPlaceholderPetition": "Petition title / subject",
+      "requiredField": "This field is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "validationError": "Please review the required fields.",
       "kvkkConsent": " and agree to the processing of my personal data.",
       "kvkkLink": "Privacy Policy",
       "newsletter": "I want to receive newsletters and announcements.",
@@ -174,6 +245,18 @@
       "success": "Your message has been sent successfully. We will get back to you as soon as possible.",
       "error": "An error occurred. Please try again later.",
       "required": "*"
+    },
+    "petition": {
+      "title": "Petition",
+      "court": "Authority / Court",
+      "subject": "Subject",
+      "area": "Legal Area",
+      "facts": "Summary of Facts",
+      "request": "Claim / Request",
+      "send": "Send",
+      "thanks": "Thank you, we received your message.",
+      "error": "An error occurred. Please try again later.",
+      "print": "Print"
     },
     "info": {
       "address": "Address",
@@ -199,7 +282,10 @@
     "source": "Source",
     "readFull": "Read the full article",
     "tags": "Tags",
-    "disclaimer": "This news is for summary information purposes. Please check the relevant official sources for detailed and up-to-date information."
+    "disclaimer": "This news is for summary information purposes. Please check the relevant official sources for detailed and up-to-date information.",
+    "loadMore": "Load more updates",
+    "loadingMore": "Loading…",
+    "resultsFound": "results found"
   },
   "articles": {
     "backToList": "Back to articles list",
@@ -210,9 +296,27 @@
     "readMore": "Read More",
     "learnMore": "Learn More",
     "viewDetails": "View Details",
+    "quickView": "Quick View",
     "close": "Close",
     "back": "Back",
-    "changeLanguage": "Change language"
+    "changeLanguage": "Change language",
+    "siteName": "Kaynar Law",
+    "logoAlt": "Kaynar Law Firm Logo",
+    "homeLinkAria": "Kaynar Law Firm homepage",
+    "scrollToTop": "Scroll to top"
+  },
+  "animation": {
+    "label": "Animation",
+    "settingsAria": "Animation density settings",
+    "settingsTitle": "Animation density",
+    "menuHeading": "Animation Density",
+    "density": {
+      "off": "Off",
+      "lite": "Lite",
+      "rich": "Rich",
+      "max": "Max"
+    },
+    "reducedMotionWarning": "⚠️ Reduced motion preference detected"
   },
   "cookies": {
     "banner": {
@@ -258,6 +362,11 @@
     ]
   },
   "footer": {
+    "about": "Kaynar Law Firm",
+    "brandTagline": "Disciplined advocacy, transparent counsel",
+    "aboutDesc": "Kaynar Law Firm delivers strategic representation across criminal, family, employment, and commercial law with proactive communication at every step.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
     "disclaimer": "The content on this website is for general information purposes only and does not constitute legal advice.",
     "cookiePreferences": "Cookie Preferences",
     "secondaryNotice": "This website is for information purposes only and does not constitute legal advice.",
@@ -265,6 +374,7 @@
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "linksAria": "Footer navigation",
+    "disclaimerText": "The content on this website is for general information purposes only and does not constitute legal advice.",
     "copyright": "© {year} Kaynar Law Firm."
   },
   "filters": {
@@ -355,7 +465,10 @@
         "heading": "Articles",
         "subtitle": "Insights and commentary from our team",
         "description": "Filter our legal articles by date and practice area.",
-        "results": "{count, plural, one {# result found} other {# results found}}"
+        "results": "{count, plural, one {# result found} other {# results found}}",
+        "searchPlaceholder": "Search articles…",
+        "loadMore": "Load more articles",
+        "loadingMore": "Loading…"
       },
       "empty": {
         "title": "No results found",
@@ -365,7 +478,9 @@
         "back": "Back to articles list",
         "disclaimer": "The information provided is for general guidance and does not constitute legal advice.",
         "generalNotice": "The content on this website is for information purposes only and does not constitute legal advice.",
-        "notFoundTitle": "Article not found"
+        "notFoundTitle": "Article not found",
+        "share": "Share",
+        "contents": "Contents"
       }
     },
     "team": {

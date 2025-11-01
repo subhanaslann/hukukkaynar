@@ -28,6 +28,12 @@ const config: Config = {
           DEFAULT: 'hsl(var(--gold))',
           subtle: 'hsl(var(--gold-subtle))'
         },
+        brandNavy: {
+          DEFAULT: '#051D40'
+        },
+        neutralCoal: {
+          DEFAULT: '#1B1C1D'
+        },
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-fg))'

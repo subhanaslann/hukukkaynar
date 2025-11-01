@@ -30,6 +30,8 @@ import {
   Calendar,
   MessageCircle,
   Languages,
+  Quote,
+  Star,
   type LucideIcon
 } from 'lucide-react';
 
@@ -67,6 +69,8 @@ export const Icons = {
   arrowLeft: ArrowLeft,
   helpCircle: HelpCircle,
   languages: Languages,
+  quote: Quote,
+  star: Star,
 
   // Social
   facebook: Facebook,

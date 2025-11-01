@@ -2,5 +2,23 @@
   "extends": ["next/core-web-vitals", "prettier"],
   "rules": {
     "@next/next/no-img-element": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["components/**/*.tsx", "components/**/*.ts", "app/**/*Client.tsx"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "next/link",
+                "message": "Client component'lerde '@/lib/i18n/navigation' içindeki Link'i kullanın."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }

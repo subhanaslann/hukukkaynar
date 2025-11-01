@@ -1,6 +1,6 @@
 "use client";
 
-import Link from 'next/link';
+import { Link } from '@/lib/i18n/navigation';
 import { useTranslations } from 'next-intl';
 import { useCookieConsent } from '@/components/CookieBanner';
 import { CONTACT_INFO, FOOTER_LINKS } from '@/lib/constants';

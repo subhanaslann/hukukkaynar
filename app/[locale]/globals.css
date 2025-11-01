@@ -9,7 +9,7 @@
  *
  * Tasarım Yaklaşımı:
  * - Serif başlıklar (Merriweather) + sans metin (Inter)
- * - Altın vurgu (#C8A45D) ince çizgiler ve detaylarda
+ * - Altın vurgu (#B19957) ince çizgiler ve detaylarda
  * - Bol beyaz alan, minimal hareket
  * - Mobil-öncelikli, erişilebilir
  */
@@ -21,25 +21,66 @@
 :root {
   color-scheme: dark;
 
-  /* Premium Law Firm Color Palette */
-  --bg: 14 48% 11%;           /* #0E1726 - Deep navy */
-  --fg: 220 13% 95%;          /* #F3F4F6 - Ivory white */
-  --muted: 214 15% 65%;       /* #9AA4B2 - Muted blue-gray */
-  --muted-fg: 214 15% 45%;    /* Darker muted */
-  --gold: 40 48% 58%;         /* #C8A45D - Elegant gold */
-  --gold-subtle: 40 48% 58%;  /* For borders/accents */
-  --line: 40 48% 58% / 0.35;  /* Hairline separator */
+  /* Palette 3 – Deep Navy & Gold */
+  --bg: 215 22% 8%;           /* #0F1216 */
+  --card: 215 24% 11%;
+  --fg: 0 0% 98%;
+  --card-fg: 0 0% 98%;
+  --muted: 215 18% 68%;
+  --muted-fg: 215 18% 52%;
+  --gold: 47 36% 50%;         /* #B19957 */
+  --gold-subtle: 47 36% 50%;
+  --line: 47 36% 50% / 0.35;
+  --brand-navy: 211 88% 14%;  /* #051D40 */
+  --coal: 210 3% 12%;
+  --gold-glow: 47 36% 50% / 0.35;
 
   /* Semantic colors */
-  --border: 220 13% 20%;
-  --ring: 40 48% 58%;
-  --card: 14 48% 13%;
-  --card-fg: 220 13% 95%;
+  --border: 215 16% 20%;
+  --ring: 47 36% 50%;
 
   /* Status colors */
   --success: 142 76% 36%;
   --warning: 38 92% 50%;
   --error: 0 84% 60%;
+}
+
+:root[data-theme='classic-light'] {
+  color-scheme: light;
+
+  --bg: 0 0% 100%;            /* #FFFFFF */
+  --card: 50 38% 97%;         /* #FAF9F4 */
+  --fg: 216 86% 14%;          /* #051D40 */
+  --card-fg: 216 86% 14%;
+  --muted: 212 11% 53%;       /* #7A8694 */
+  --muted-fg: 212 16% 38%;
+  --gold: 47 36% 50%;
+  --gold-subtle: 47 36% 50%;
+  --line: 47 36% 50% / 0.35;
+  --gold-glow: 47 36% 50% / 0.35;
+  --brand-navy: 211 88% 14%;
+  --coal: 210 3% 12%;
+  --border: 46 13% 81%;       /* #D4D1C7 */
+  --ring: 47 36% 50%;
+}
+
+:root[data-theme='cream'] {
+  color-scheme: light;
+
+  --bg: 35 48% 90%;           /* #F2E8DA */
+  --card: 35 55% 94%;         /* softened parchment */
+  --fg: 215 61% 16%;          /* #102543 */
+  --card-fg: 215 61% 16%;
+  --muted: 28 20% 46%;
+  --muted-fg: 28 23% 38%;
+  --gold: 47 36% 50%;
+  --gold-subtle: 47 36% 50%;
+  --line: 47 36% 50% / 0.35;
+  --gold-glow: 47 36% 50% / 0.35;
+  --brand-navy: 211 88% 14%;
+  --coal: 210 3% 12%;
+  --border: 35 28% 76%;
+  --ring: 47 36% 50%;
 }
 
 @layer base {
@@ -83,6 +124,42 @@
 
   .gold-border {
     @apply border-[hsl(var(--gold))];
+  }
+
+  .gold-glow {
+    box-shadow: 0 12px 28px -18px hsl(var(--gold-glow));
+  }
+
+  .gold-focus:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border-2 gold-border bg-gold px-5 py-2.5 text-sm font-semibold text-[hsl(var(--brand-navy))] transition-all duration-200;
+    box-shadow: 0 12px 28px -18px hsl(var(--gold-glow));
+  }
+
+  .btn-primary:hover {
+    @apply bg-gold/90;
+  }
+
+  .btn-primary:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border-2 gold-border bg-transparent px-5 py-2.5 text-sm font-semibold text-[hsl(var(--fg))] transition-all duration-200;
+  }
+
+  .btn-outline:hover {
+    @apply bg-gold/10;
+  }
+
+  .btn-outline:focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
   }
 
   /* Link styles */

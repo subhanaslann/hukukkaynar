@@ -2,11 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { useAnimEnabled } from './AnimationProvider';
 
 export default function ScrollTop() {
   const [show, setShow] = useState(false);
   const animEnabled = useAnimEnabled('lite');
+  const t = useTranslations('common');
 
   useEffect(() => {
     const onScroll = () => setShow(window.scrollY > 400);
@@ -21,7 +23,7 @@ export default function ScrollTop() {
         <motion.button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          aria-label="Yukarı dön"
+          aria-label={t('scrollToTop')}
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0, opacity: 0 }}

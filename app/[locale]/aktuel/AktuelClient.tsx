@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/lib/i18n/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { formatDate, getRelativeTime } from '@/lib/formatDate';
 import { getAllNews } from '@/lib/aktuel';
@@ -29,31 +29,27 @@ import AdvancedFilters from '@/components/filters/AdvancedFilters';
 import DateRangePicker from '@/components/filters/DateRangePicker';
 import { useAnimEnabled } from '@/components/AnimationProvider';
 import Reveal from '@/components/Reveal';
-import { localizedHref } from '@/lib/i18n/navigation';
+import { SourceBadge } from '@/components/news/SourceBadge';
+import { TypeBadge } from '@/components/news/TypeBadge';
+import { ListSkeleton } from '@/components/shared/ListSkeleton';
+import { LoadMore } from '@/components/shared/LoadMore';
 import { PAGE_COPY } from './pageCopy';
 import type { Locale } from '@/i18n';
 
 const newsItems = getAllNews();
+const PER_PAGE = 12;
 
-function formatResultsLabel(count: number, locale: Locale): string {
+function formatResultsLabel(count: number, locale: Locale, resultsFoundText: string): string {
   const formatted = new Intl.NumberFormat(locale === 'tr' ? 'tr-TR' : locale === 'ar' ? 'ar' : 'en-US').format(count);
-
-  if (locale === 'en') {
-    return `${formatted} ${count === 1 ? 'result found' : 'results found'}`;
-  }
-
-  if (locale === 'ar') {
-    return `عدد النتائج: ${formatted}`;
-  }
-
-  return `${formatted} sonuç bulundu`;
+  return `${formatted} ${resultsFoundText}`;
 }
 
 interface AktuelClientProps {
   locale: Locale;
 }
 
-export default function AktuelClient({ locale }: AktuelClientProps) {
+export default function AktuelClient({ locale: _localeProp }: AktuelClientProps) {
+  const locale = useLocale() as Locale;
   const router = useRouter();
   const searchParams = useSearchParams();
   const tFilters = useTranslations('filters');
@@ -61,17 +57,31 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
   const tNews = useTranslations('news');
   const animEnabled = useAnimEnabled('lite');
   const copy = PAGE_COPY[locale] ?? PAGE_COPY.tr;
-  const basePath = useMemo(() => localizedHref(locale, '/aktuel'), [locale]);
+  const basePath = `/aktuel`;
   const allCategories = useMemo(() => extractAllCategories(newsItems), []);
   const allTypes = useMemo(() => extractAllTypes(newsItems), []);
   const allSources = useMemo(() => extractAllSources(newsItems), []);
   const [filters, setFilters] = useState<FilterState>(() =>
     parseFiltersFromURL(new URLSearchParams(searchParams.toString()))
   );
+  const [searchDraft, setSearchDraft] = useState(filters.search);
   const [selectedQuickRange, setSelectedQuickRange] = useState<DateRangeOption | null>(null);
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [page, setPage] = useState(1);
   const loadingTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    setSearchDraft(filters.search);
+  }, [filters.search]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFilters((prev) => (prev.search === searchDraft ? prev : { ...prev, search: searchDraft }));
+      setPage(1);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [searchDraft]);
 
   useEffect(() => {
     return () => {
@@ -101,7 +111,13 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
 
   const filteredItems = useMemo(() => filterNewsItems(newsItems, filters), [filters]);
   const categoryCounts = useMemo(() => getCategoryCounts(newsItems, filters), [filters]);
-  const resultsLabel = useMemo(() => formatResultsLabel(filteredItems.length, locale), [filteredItems.length, locale]);
+  const paginatedItems = useMemo(
+    () => filteredItems.slice(0, page * PER_PAGE),
+    [filteredItems, page]
+  );
+  const hasMore = paginatedItems.length < filteredItems.length;
+  const shouldAnimate = animEnabled && page * PER_PAGE < 160;
+  const resultsLabel = useMemo(() => formatResultsLabel(filteredItems.length, locale, tNews('resultsFound')), [filteredItems.length, locale, tNews]);
   const activeFiltersLabel = tFilters('active.title', { count: getActiveFilterCount(filters) });
 
   function handleDateRangeSelect(option: DateRangeOption) {
@@ -118,6 +134,7 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
 
     const range = getQuickRange(option);
     setFilters((prev) => ({ ...prev, dateRange: range }));
+    setPage(1);
     setIsLoading(true);
     loadingTimer.current = setTimeout(() => {
       setIsLoading(false);
@@ -136,6 +153,7 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
     setSelectedQuickRange(null);
     setShowDatePicker(false);
     setFilters(DEFAULT_FILTER_STATE);
+    setPage(1);
     router.push(basePath as any);
   }
 
@@ -146,6 +164,7 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
         ? prev.categories.filter((cat) => cat !== category)
         : [...prev.categories, category]
     }));
+    setPage(1);
   }
 
   function handleToggleType(type: string) {
@@ -153,6 +172,7 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
       ...prev,
       types: prev.types.includes(type) ? prev.types.filter((item) => item !== type) : [...prev.types, type]
     }));
+    setPage(1);
   }
 
   function handleToggleSource(source: string) {
@@ -160,10 +180,11 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
       ...prev,
       sources: prev.sources.includes(source) ? prev.sources.filter((item) => item !== source) : [...prev.sources, source]
     }));
+    setPage(1);
   }
 
   function handleSearchChange(query: string) {
-    setFilters((prev) => ({ ...prev, search: query }));
+    setSearchDraft(query);
   }
 
   function handleRemoveDateRange() {
@@ -173,10 +194,11 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
     setFilters((prev) => ({ ...prev, dateRange: null }));
     setSelectedQuickRange(null);
     setIsLoading(false);
+    setPage(1);
   }
 
   function handleRemoveSearch() {
-    setFilters((prev) => ({ ...prev, search: '' }));
+    setSearchDraft('');
   }
 
   const listBaseLabel = `${tNav('news')} – ${resultsLabel}`;
@@ -235,32 +257,23 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
         sources={allSources}
         selectedTypes={filters.types}
         selectedSources={filters.sources}
-        searchQuery={filters.search}
+        searchQuery={searchDraft}
         onToggleType={handleToggleType}
         onToggleSource={handleToggleSource}
         onSearchChange={handleSearchChange}
+        showSearch
+        showTypes
+        showSources
       />
 
-      <div className="mt-8">
+      <div className="mt-8 content-visibility-auto">
         {isLoading ? (
-          <div className="space-y-4">
-            {[1, 2, 3].map((item) => (
-              <div
-                key={item}
-                className="animate-pulse rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-6"
-                aria-hidden="true"
-              >
-                <div className="mb-2 h-4 w-24 rounded bg-[hsl(var(--border))]" />
-                <div className="mb-2 h-6 w-3/4 rounded bg-[hsl(var(--border))]" />
-                <div className="h-16 w-full rounded bg-[hsl(var(--border))]" />
-              </div>
-            ))}
-          </div>
+          <ListSkeleton rows={3} />
         ) : filteredItems.length === 0 ? (
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-12 text-center"
+            className="rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-12 text-center shadow-lg"
             role="status"
             aria-live="polite"
           >
@@ -273,85 +286,59 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
         ) : (
           <AnimatePresence mode="popLayout">
             <motion.ul layout className="space-y-4" aria-label={listBaseLabel}>
-              {filteredItems.map((item, index) => {
-                const detailHref = localizedHref(locale, `/${item.id}`);
+              {paginatedItems.map((item, index) => {
+                const detailHref = `/aktuel/${item.id}`;
+                const animationDelay = shouldAnimate ? index * 0.04 : 0;
                 return (
                   <motion.li
                     key={item.id}
                     layout
-                    initial={animEnabled ? { opacity: 0, y: 20 } : {}}
-                    animate={animEnabled ? { opacity: 1, y: 0 } : {}}
-                    exit={animEnabled ? { opacity: 0, scale: 0.95 } : {}}
-                    transition={{ delay: animEnabled ? index * 0.05 : 0 }}
-                    className="group relative overflow-hidden rounded-xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
+                    initial={shouldAnimate ? { opacity: 0, y: 18 } : {}}
+                    animate={shouldAnimate ? { opacity: 1, y: 0 } : {}}
+                    exit={shouldAnimate ? { opacity: 0, scale: 0.95 } : {}}
+                    transition={{ delay: animationDelay }}
+                    className="group relative overflow-hidden rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
                   >
-                    <div className="absolute left-0 top-0 h-full w-1 bg-[hsl(var(--gold))] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <div className="flex items-start justify-between gap-6">
-                      <div className="flex-1">
-                        <div className="mb-3 flex flex-wrap items-center gap-3 text-sm text-[hsl(var(--muted))]">
+                    <span className="absolute left-0 top-0 h-full w-1 bg-[hsl(var(--gold))] opacity-80" aria-hidden />
+                    <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+                      <div className="flex-1 space-y-4">
+                        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm">
                           <time className="font-semibold text-[hsl(var(--gold))]">
                             {formatDate(item.date, 'long', locale)}
                           </time>
-                          <span aria-hidden="true">•</span>
-                          <span>{getRelativeTime(item.date, locale)}</span>
-                          {item.type && (
-                            <>
-                              <span aria-hidden="true">•</span>
-                              <span className="rounded-md bg-[hsl(var(--gold))]/10 px-2 py-0.5 text-xs font-semibold text-[hsl(var(--gold))] border border-[hsl(var(--gold))]/30">
-                                {item.type}
-                              </span>
-                            </>
-                          )}
-                          {item.source && (
-                            <>
-                              <span aria-hidden="true">•</span>
-                              <span className="text-sm font-medium text-[hsl(var(--muted))]">{item.source}</span>
-                            </>
-                          )}
+                          <span className="text-[hsl(var(--muted))]">{getRelativeTime(item.date, locale)}</span>
+                          {item.type && <TypeBadge type={item.type} size="sm" />}
+                          {item.source && <SourceBadge source={item.source} size="sm" />}
                         </div>
 
-                        <Link href={detailHref as any}>
-                          <h3 className="mb-2 text-xl font-bold leading-tight text-[hsl(var(--fg))] transition-colors group-hover:text-[hsl(var(--gold))]">
-                            {item.title}
-                          </h3>
-                        </Link>
-
-                        <p className="text-[hsl(var(--muted))]">{item.excerpt}</p>
+                        <div className="space-y-3">
+                          <Link href={detailHref} className="block focus:outline-none focus:ring-2 focus:ring-[hsl(var(--gold))] focus:ring-offset-2 focus:ring-offset-[hsl(var(--card))]">
+                            <h3 className="text-xl font-bold leading-tight text-[hsl(var(--fg))] transition-colors group-hover:text-[hsl(var(--gold))] sm:text-2xl">
+                              {item.title}
+                            </h3>
+                          </Link>
+                          <p className="text-sm leading-relaxed text-[hsl(var(--muted))] sm:text-base">{item.excerpt}</p>
+                        </div>
 
                         {item.categories && item.categories.length > 0 && (
-                          <div className="mt-4 flex flex-wrap gap-2">
-                            {item.categories.map((category) => (
+                          <div className="flex flex-wrap gap-2">
+                            {item.categories.slice(0, 4).map((category) => (
                               <span
                                 key={category}
-                                className="rounded-full border border-[hsl(var(--gold))]/30 bg-[hsl(var(--gold))]/10 px-2.5 py-1 text-xs font-medium text-[hsl(var(--gold))]"
+                                className="inline-flex items-center rounded-full border border-[hsl(var(--gold))]/30 bg-[hsl(var(--gold))]/10 px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wide text-[hsl(var(--gold))]"
                               >
                                 {category}
                               </span>
                             ))}
                           </div>
                         )}
-
-                        {item.tags && item.tags.length > 0 && (
-                          <div className="mt-4 flex flex-wrap gap-2">
-                            {item.tags.map((tag) => (
-                              <span
-                                key={tag}
-                                className="rounded-full bg-[hsl(var(--card))] px-3 py-1 text-xs font-semibold text-[hsl(var(--muted))] border border-[hsl(var(--border))]"
-                              >
-                                #{tag}
-                              </span>
-                            ))}
-                          </div>
-                        )}
                       </div>
 
-                      <Link href={detailHref as any} aria-label={item.title}>
-                        <motion.div whileHover={{ x: 4 }} className="flex-shrink-0">
-                          <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[hsl(var(--gold))]/30 bg-[hsl(var(--gold))]/10 text-[hsl(var(--gold))] shadow-md transition-all hover:bg-[hsl(var(--gold))]/20">
-                            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                            </svg>
-                          </div>
+                      <Link href={detailHref} aria-label={item.title} className="self-center md:self-start">
+                        <motion.div whileHover={{ x: 4 }} className="flex h-10 w-10 items-center justify-center rounded-full border border-[hsl(var(--gold))]/30 bg-[hsl(var(--gold))]/10 text-[hsl(var(--gold))] shadow-md transition-all hover:bg-[hsl(var(--gold))]/20">
+                          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                          </svg>
                         </motion.div>
                       </Link>
                     </div>
@@ -363,18 +350,27 @@ export default function AktuelClient({ locale }: AktuelClientProps) {
         )}
       </div>
 
+      <LoadMore
+        onLoadMore={() => setPage((prev) => prev + 1)}
+        hasMore={hasMore}
+        isLoading={isLoading}
+        label={tNews('loadMore')}
+        loadingLabel={tNews('loadingMore')}
+      />
+
       <AnimatePresence>
         {showDatePicker && (
-          <DateRangePicker
-            value={filters.dateRange}
-            onChange={(range) => {
-              setFilters((prev) => ({ ...prev, dateRange: range }));
-              setSelectedQuickRange(range ? 'custom' : null);
-            }}
-            onClose={() => {
-              setShowDatePicker(false);
-            }}
-          />
+      <DateRangePicker
+        value={filters.dateRange}
+        onChange={(range) => {
+          setFilters((prev) => ({ ...prev, dateRange: range }));
+          setSelectedQuickRange(range ? 'custom' : null);
+          setPage(1);
+        }}
+        onClose={() => {
+          setShowDatePicker(false);
+        }}
+      />
         )}
       </AnimatePresence>
 

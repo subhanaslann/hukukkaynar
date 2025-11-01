@@ -1,11 +1,10 @@
 'use client';
 
-import Link from 'next/link';
+import { Link, localizedHref } from '@/lib/i18n/navigation';
 import { usePathname } from 'next/navigation';
 import { PropsWithChildren } from 'react';
 import { motion } from 'framer-motion';
 import { useLocale } from 'next-intl';
-import { localizedHref } from '@/lib/i18n/navigation';
 import { useAnimEnabled } from './AnimationProvider';
 
 interface NavLinkProps {

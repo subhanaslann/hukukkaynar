@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { Topbar } from '@/components/layout/Topbar';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import TeamCard from '@/components/TeamCard';
+import { OurTeamGrid } from '@/components/sections/OurTeamGrid';
 import { TEAM } from '@/content/team';
 
 interface PageProps {
@@ -45,21 +45,7 @@ export default async function TeamPage({ params }: PageProps) {
           <div className="gold-line mx-auto mt-3 h-1 w-24" />
           <p className="mx-auto mt-4 max-w-2xl text-base text-[hsl(var(--muted))] sm:text-lg">{tPage('subtitle')}</p>
         </header>
-        <div className="space-y-8">
-          {TEAM.map((member) => (
-            <TeamCard
-              key={member.slug}
-              member={{
-                name: member.name,
-                university: member.university,
-                areas: member.areas,
-                image: member.avatar,
-                bio: member.bio,
-                email: member.email
-              }}
-            />
-          ))}
-        </div>
+        <OurTeamGrid members={TEAM} />
       </section>
       <Footer />
     </>

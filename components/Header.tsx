@@ -1,11 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/lib/i18n/navigation';
 import { useEffect, useState } from 'react';
 import { useLocale } from 'next-intl';
 import { HEADER_LINKS } from '@/lib/constants';
-import { localizedHref } from '@/lib/i18n/navigation';
 import NavLink from './NavLink';
 import AnimationToggle from './AnimationToggle';
 
@@ -49,7 +48,7 @@ export default function Header() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link
-            href={localizedHref(locale, '/') as any}
+            href="/"
             className="flex items-center gap-3"
             aria-label="Kaynar Hukuk Bürosu ana sayfa"
           >
@@ -119,7 +118,7 @@ export default function Header() {
               {HEADER_LINKS.map((link) => (
                 <Link
                   key={link.href}
-                  href={localizedHref(locale, link.href) as any}
+                  href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className="block rounded-lg px-4 py-3 text-base font-medium text-primary-700 hover:bg-primary-50 hover:text-accentBlue-700 transition-colors"
                 >

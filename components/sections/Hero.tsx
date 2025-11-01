@@ -1,12 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/lib/i18n/navigation';
 import { Icons } from '@/components/shared/Icons';
 
 export function Hero() {
-  const locale = useLocale();
   const t = useTranslations('hero');
   const tContact = useTranslations('contact');
 
@@ -22,7 +21,7 @@ export function Hero() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--bg))]/95 via-[hsl(var(--bg))]/80 to-[hsl(var(--bg))]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--brand-navy))]/95 via-[hsl(var(--bg))]/82 to-[hsl(var(--bg))]/62" />
       </div>
 
       {/* Gold accent line */}
@@ -42,14 +41,14 @@ export function Hero() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6">
               <Link
-                href={`/${locale}/iletisim` as any}
-                className="inline-flex items-center justify-center rounded-md border-2 gold-border bg-gold px-8 py-3.5 text-sm font-semibold text-[hsl(var(--bg))] shadow-md hover:bg-gold/90 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                href={"/iletisim" as any}
+                className="btn-primary gold-focus px-8 py-3.5"
               >
                 {t('ctaAppointment')}
               </Link>
               <a
                 href={`tel:${tContact('phoneNumber')}`}
-                className="inline-flex items-center justify-center gap-2 rounded-md border-2 gold-border bg-transparent px-8 py-3.5 text-sm font-semibold text-foreground hover:bg-gold/10 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                className="btn-outline gold-focus px-8 py-3.5"
               >
                 <Icons.phone className="h-5 w-5" />
                 <span>{t('ctaCall')}</span>

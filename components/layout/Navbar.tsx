@@ -1,119 +1,196 @@
-﻿'use client';
+'use client';
 
 import * as React from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
-import { Container } from '@/components/shared/Container';
-import { Icons } from '@/components/shared/Icons';
+import { Link } from '@/lib/i18n/navigation';
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher';
 import { cn } from '@/lib/utils';
+import { locales, type Locale } from '@/i18n';
+
+type NavItem = {
+  key: string;
+  label: string;
+  href: string;
+};
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations('nav');
 
-  const navigation = [
-    { name: t('about'), href: `/${locale}/hakkimizda` },
-    { name: t('practiceAreas'), href: `/${locale}/calisma-alanlari` },
-    { name: t('team'), href: `/${locale}/ekibimiz` },
-    { name: t('news'), href: `/${locale}/aktuel` },
-    { name: t('articles'), href: `/${locale}/makaleler` },
-    { name: t('contact'), href: `/${locale}/iletisim` }
-  ];
-
   React.useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 24);
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = React.useMemo<NavItem[]>(() => {
+    return [
+      { key: 'about', label: t('about'), href: '/hakkimizda' },
+      {
+        key: 'services',
+        label: t('services'),
+        href: '/calisma-alanlari'
+      },
+      { key: 'team', label: t('team'), href: '/ekibimiz' },
+      {
+        key: 'references',
+        label: t('references'),
+        href: '/referanslar'
+      },
+      {
+        key: 'articles',
+        label: t('articles'),
+        href: '/makaleler'
+      },
+      {
+        key: 'news',
+        label: t('news'),
+        href: '/aktuel'
+      },
+      { key: 'contact', label: t('contact'), href: '/iletisim' }
+    ];
+  }, [t]);
+
+  const handleToggle = () => setIsOpen((prev) => !prev);
+  const closeMenu = () => setIsOpen(false);
+
+  const stripLocale = (p: string) => {
+    const segs = (p || '').split('/').filter(Boolean);
+    if (segs.length && locales.includes(segs[0] as Locale)) {
+      segs.shift();
+    }
+    return '/' + segs.join('/');
+  };
+
+  const isActive = (href: string) => {
+    const current = stripLocale(pathname ?? '');
+    const normalized = href.replace(/\/+$/, '');
+    return current === normalized || current.startsWith(`${normalized}/`);
+  };
+
+  const linkBase =
+    'relative flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors border-b-2 border-transparent';
+  const linkHover =
+    'text-[hsl(var(--muted))] hover:text-[hsl(var(--gold))] hover:bg-[hsl(var(--gold))]/10';
+  const linkActive =
+    'text-[hsl(var(--fg))] bg-[hsl(var(--gold))]/10 border-[hsl(var(--gold))] shadow-[inset_0_-2px_0_hsl(var(--gold))]';
+
+  const tCommon = useTranslations('common');
+
   return (
     <nav
+      role="navigation"
+      aria-label={t('mainMenuAria')}
       className={cn(
-        'sticky top-0 z-50 w-full border-b transition-all duration-300',
+        'sticky top-0 z-50 w-full transition-all duration-300 border-b',
         isScrolled
           ? 'border-[hsl(var(--line))] bg-[hsl(var(--bg))]/95 backdrop-blur-md shadow-sm'
           : 'border-transparent bg-[hsl(var(--bg))]'
       )}
     >
-      <Container>
-        <div className="flex items-center justify-between py-4 lg:py-5">
-          {/* Logo */}
-          <Link href={`/${locale}` as any} className="flex items-center gap-3 group">
-            <div className="h-10 w-10 rounded-full border-2 gold-border flex items-center justify-center bg-[hsl(var(--card))] group-hover:bg-gold/10 transition-colors">
-              <Icons.scale className="h-5 w-5 gold-text" />
-            </div>
-            <div>
-              <div className="text-lg font-serif font-bold text-foreground">Kaynar Hukuk</div>
-              <div className="text-xs text-muted">{t('brandSubtitle')}</div>
-            </div>
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between lg:h-20">
+          <Link href={"/" as any} className="flex items-center gap-3" aria-label={tCommon('homeLinkAria')}>
+            <Image
+              src="/logo.svg"
+              alt={tCommon('logoAlt')}
+              width={160}
+              height={44}
+              priority
+              style={{ height: 44, width: 'auto' }}
+            />
+            <span className="hidden text-base font-semibold tracking-tight text-[hsl(var(--fg))] sm:block">
+              {tCommon('siteName')}
+            </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:gap-6">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href as any}
-                className="text-sm font-medium text-muted hover:text-foreground transition-colors"
-              >
-                {item.name}
+          <div className="hidden items-center gap-6 lg:flex">
+            <ul className="flex items-center gap-4">
+              {navItems.map((item) => {
+                const active = isActive(item.href);
+                return (
+                  <li key={item.key}>
+                    <Link
+                      href={item.href as any}
+                      className={cn(linkBase, active ? linkActive : linkHover)}
+                      aria-current={active ? 'page' : undefined}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <div className="flex items-center gap-3">
+              <Link href={"/iletisim" as any} className="btn-primary gold-focus px-5 py-2.5">
+                {t('appointment')}
               </Link>
-            ))}
-            <Link
-              href={`/${locale}/iletisim` as any}
-              className="rounded-md gold-border border px-5 py-2.5 text-sm font-semibold gold-text hover:bg-gold/10 transition-all duration-200"
-            >
-              {t('appointment')}
-            </Link>
-            <LanguageSwitcher />
+              <LanguageSwitcher />
+            </div>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden rounded-md p-2 text-muted hover:text-foreground hover:bg-card transition-colors"
+            onClick={handleToggle}
+            className="rounded-md p-2 text-[hsl(var(--muted))] transition-colors hover:bg-[hsl(var(--gold))]/10 hover:text-[hsl(var(--fg))] lg:hidden"
             aria-expanded={isOpen}
+            aria-controls="mobile-nav"
             aria-label={t('menuToggle')}
           >
-            {isOpen ? <Icons.close className="h-6 w-6" /> : <Icons.menu className="h-6 w-6" />}
+            <span className="sr-only">{t('menuToggle')}</span>
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {isOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
-          <div className="border-t border-[hsl(var(--line))] py-4 lg:hidden">
-            <div className="flex flex-col gap-3">
-              {navigation.map((item) => (
+          <div id="mobile-nav" className="border-t border-[hsl(var(--line))] py-4 lg:hidden">
+            <ul className="flex flex-col gap-1">
+              {navItems.map((item) => {
+                const active = isActive(item.href);
+                return (
+                  <li key={item.key}>
+                    <Link
+                      href={item.href as any}
+                      onClick={closeMenu}
+                      className={cn(
+                        'block rounded-md px-3 py-3 text-base transition-colors',
+                        active
+                          ? 'border border-[hsl(var(--gold))]/30 bg-[hsl(var(--gold))]/10 text-[hsl(var(--fg))]'
+                          : 'text-[hsl(var(--muted))] hover:bg-[hsl(var(--gold))]/10 hover:text-[hsl(var(--fg))]'
+                      )}
+                      aria-current={active ? 'page' : undefined}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li className="mt-3 flex items-center justify-between gap-3 px-3">
                 <Link
-                  key={item.name}
-                  href={item.href as any}
-                  onClick={() => setIsOpen(false)}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-muted hover:text-foreground hover:bg-card transition-colors"
+                  href={"/iletisim" as any}
+                  onClick={closeMenu}
+                  className="btn-primary gold-focus px-4 py-2"
                 >
-                  {item.name}
+                  {t('appointment')}
                 </Link>
-              ))}
-              <Link
-                href={`/${locale}/iletisim` as any}
-                onClick={() => setIsOpen(false)}
-                className="mt-2 rounded-md gold-border border px-5 py-2.5 text-center text-sm font-semibold gold-text hover:bg-gold/10 transition-all"
-              >
-                {t('appointment')}
-              </Link>
-              <div className="mt-3 px-3">
                 <LanguageSwitcher />
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         )}
-      </Container>
+      </div>
     </nav>
   );
 }

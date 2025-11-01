@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/lib/i18n/navigation';
 import { PropsWithChildren, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useAnimEnabled } from './AnimationProvider';

@@ -1,0 +1,178 @@
+#pre-load {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: hsl(var(--bg));
+  transition: opacity 220ms ease, visibility 220ms ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  will-change: opacity, visibility;
+  isolation: isolate;
+  contain: layout paint size;
+}
+
+html.preload-active #pre-load {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+html.preload-done #pre-load {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+html[data-loading='true'],
+html[data-loading='true'] body {
+  overflow: hidden;
+}
+
+#pre-load .loader-inner {
+  position: relative;
+  height: 240px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --loader-background: linear-gradient(
+    0deg,
+    color-mix(in hsl, hsl(var(--fg)) 10%, transparent) 0%,
+    color-mix(in hsl, hsl(var(--fg)) 20%, transparent) 100%
+  );
+  will-change: transform;
+  contain: layout style;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+@supports not (color: color-mix(in hsl, white, black)) {
+  #pre-load .loader-inner {
+    --loader-background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  }
+}
+
+#pre-load .loader-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--gold));
+  animation: color-change 1.6s infinite ease-in-out;
+  z-index: 999;
+  will-change: opacity;
+}
+
+#pre-load .loader-logo svg,
+#pre-load .loader-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+#pre-load .loader-inner .box {
+  position: absolute;
+  background: var(--loader-background);
+  border-radius: 50%;
+  border-top: 1px solid color-mix(in hsl, hsl(var(--gold)) 55%, black 45%);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+  animation: ripple 1.6s infinite ease-in-out;
+  will-change: transform, opacity;
+  transform: translateZ(0) scale(1);
+  opacity: 0.85;
+}
+
+#pre-load .loader-inner .box:nth-child(1) {
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  z-index: 99;
+}
+
+#pre-load .loader-inner .box:nth-child(2) {
+  inset: 30%;
+  animation-delay: 0.2s;
+  z-index: 98;
+}
+
+#pre-load .loader-inner .box:nth-child(3) {
+  inset: 20%;
+  animation-delay: 0.4s;
+  z-index: 97;
+}
+
+#pre-load .loader-inner .box:nth-child(4) {
+  inset: 10%;
+  animation-delay: 0.6s;
+  z-index: 96;
+}
+
+#pre-load .loader-inner .box:nth-child(5) {
+  inset: 0;
+  animation-delay: 0.8s;
+  z-index: 95;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translateZ(0) scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateZ(0) scale(1.26);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0) scale(1);
+    opacity: 0.85;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+
+@supports not (color: color-mix(in hsl, white 50%, black 50%)) {
+  #pre-load .loader-inner .box {
+    border-top: 1px solid hsl(var(--gold));
+  }
+}
+
+@supports (backdrop-filter: blur(5px)) {
+  @media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+    #pre-load .loader-inner .box {
+      backdrop-filter: blur(3px);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #pre-load .loader-inner .box:nth-child(5) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #pre-load,
+  #pre-load .loader-inner .box,
+  #pre-load .loader-logo {
+    animation: none !important;
+    transition-duration: 0ms !important;
+  }
+}

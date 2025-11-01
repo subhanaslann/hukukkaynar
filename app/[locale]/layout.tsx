@@ -5,12 +5,15 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Inter, Merriweather } from 'next/font/google';
 import './globals.css';
+import '@/components/preloader/dark-ripple-preloader.css';
 import { AnimationProvider } from '@/components/AnimationProvider';
 import CookieConsentProvider from '@/components/CookieBanner';
 import { getServerConsent } from '@/lib/cookies-server';
 import { legalServiceJsonLd, organizationJsonLd, webSiteJsonLd } from '@/lib/schema';
 import { SITE_URL } from '@/lib/site-config';
 import { locales, localeDirections, type Locale } from '@/i18n';
+import DarkRipplePreloader from '@/components/preloader/DarkRipplePreloader';
+import PreloadController from '@/components/preloader/PreloadController';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -69,6 +72,14 @@ export const metadata: Metadata = {
     description: 'Dürüst danışmanlık. Disiplinli takip.',
     images: ['/og-image.jpg']
   },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    shortcut: ['/favicon.svg'],
+    apple: [{ url: '/favicon.svg' }]
+  },
   robots: {
     index: true,
     follow: true
@@ -78,7 +89,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0E1726'
+  themeColor: '#0F1216'
 };
 
 export function generateStaticParams() {
@@ -142,7 +153,9 @@ export default async function LocaleLayout({
         />
       </head>
       <body className={`${inter.variable} ${merriweather.variable} font-sans`}>
-        <NextIntlClientProvider messages={messages}>
+        <DarkRipplePreloader />
+        <PreloadController />
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <AnimationProvider>
             <CookieConsentProvider initialConsent={consent}>
               <a href="#main-content" className="skip-link">

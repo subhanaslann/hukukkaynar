@@ -8,6 +8,10 @@ interface ContactFormData {
   subject: string;
   message: string;
   kvkk: boolean;
+  court?: string;
+  lawArea?: string;
+  facts?: string;
+  request?: string;
 }
 
 const RATE_LIMIT_WINDOW_MS = 60_000;
@@ -25,6 +29,31 @@ type TransportOptions = {
 };
 
 let transporter: nodemailer.Transporter | null = null;
+
+const htmlEscapeMap: Record<string, string> = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;'
+};
+
+function escapeHtml(value: string) {
+  return value.replace(/[&<>"']/g, (char) => htmlEscapeMap[char] ?? char);
+}
+
+function formatMultilineHtml(value: string) {
+  return escapeHtml(value).replace(/\r?\n/g, '<br />');
+}
+
+function buildHtmlRows(entries: Array<[string, string]>) {
+  return entries
+    .map(([label, value]) => {
+      const safeValue = value ? escapeHtml(value) : '-';
+      return `<p style="margin:0 0 6px;line-height:1.5;"><strong>${label}:</strong> ${safeValue || '-'}</p>`;
+    })
+    .join('');
+}
 
 function getEnv(name: string): string | undefined {
   const value = process.env[name];
@@ -74,28 +103,71 @@ async function sendMail(data: ContactFormData) {
     });
   }
 
+  const petitionValues = {
+    court: data.court || '-',
+    subject: data.subject || '-',
+    lawArea: data.lawArea || '-',
+    facts: data.facts || '-',
+    request: data.request || '-'
+  };
+
+  const textBody = [
+    '--- Dilekçe ---',
+    `Başvuru Makamı/Mahkeme: ${petitionValues.court}`,
+    `Konu: ${petitionValues.subject}`,
+    `Hukuk Alanı: ${petitionValues.lawArea}`,
+    `Olayın Özeti: ${petitionValues.facts}`,
+    `Talep/İstem: ${petitionValues.request}`,
+    '',
+    '--- Başvuran Bilgileri ---',
+    `Ad Soyad: ${data.name}`,
+    `E-posta: ${data.email}`,
+    `Telefon: ${data.phone}`,
+    `KVKK: ${data.kvkk ? 'Onaylandı' : 'Onaylanmadı'}`,
+    '',
+    '--- Mesaj ---',
+    data.message || '-'
+  ].join('\n');
+
+  const htmlPetition = buildHtmlRows([
+    ['Başvuru Makamı/Mahkeme', petitionValues.court],
+    ['Konu', petitionValues.subject],
+    ['Hukuk Alanı', petitionValues.lawArea],
+    ['Olayın Özeti', petitionValues.facts],
+    ['Talep/İstem', petitionValues.request]
+  ]);
+
+  const htmlApplicant = buildHtmlRows([
+    ['Ad Soyad', data.name],
+    ['E-posta', data.email],
+    ['Telefon', data.phone],
+    ['KVKK', data.kvkk ? 'Onaylandı' : 'Onaylanmadı']
+  ]);
+
+  const htmlMessage = formatMultilineHtml(data.message || '-');
+
   const payload = {
     from: options.from,
     to: options.to,
     replyTo: data.email,
     subject: `[İletişim Formu] ${data.subject}`,
-    text: [
-      `Ad Soyad: ${data.name}`,
-      `E-posta: ${data.email}`,
-      `Telefon: ${data.phone}`,
-      `Konu: ${data.subject}`,
-      '',
-      data.message
-    ].join('\n'),
+    text: textBody,
     html: `
       <div>
-        <p><strong>Ad Soyad:</strong> ${data.name}</p>
-        <p><strong>E-posta:</strong> ${data.email}</p>
-        <p><strong>Telefon:</strong> ${data.phone}</p>
-        <p><strong>Konu:</strong> ${data.subject}</p>
-        <p><strong>KVKK:</strong> ${data.kvkk ? 'Onaylandı' : 'Onaylanmadı'}</p>
-        <hr />
-        <p>${data.message.replace(/\n/g, '<br />')}</p>
+        <section>
+          <h2 style="font-size:16px;margin-bottom:8px;">Dilekçe</h2>
+          ${htmlPetition}
+        </section>
+        <hr style="margin:16px 0;border:none;border-top:1px solid #e5e5e5;" />
+        <section>
+          <h2 style="font-size:16px;margin-bottom:8px;">Başvuran Bilgileri</h2>
+          ${htmlApplicant}
+        </section>
+        <hr style="margin:16px 0;border:none;border-top:1px solid #e5e5e5;" />
+        <section>
+          <h2 style="font-size:16px;margin-bottom:8px;">Mesaj</h2>
+          <p style="margin:0;line-height:1.6;">${htmlMessage}</p>
+        </section>
       </div>
     `
   };
@@ -128,13 +200,18 @@ function isRateLimited(ip: string): boolean {
 }
 
 function sanitizePayload(data: ContactFormData) {
+  const sanitize = (value?: string) => value?.toString().trim() ?? '';
   return {
-    name: data.name?.trim(),
-    email: data.email?.trim(),
-    phone: data.phone?.trim(),
-    subject: data.subject?.trim(),
-    message: data.message?.trim(),
-    kvkk: Boolean(data.kvkk)
+    name: sanitize(data.name),
+    email: sanitize(data.email),
+    phone: sanitize(data.phone),
+    subject: sanitize(data.subject),
+    message: sanitize(data.message),
+    kvkk: Boolean(data.kvkk),
+    court: sanitize(data.court),
+    lawArea: sanitize(data.lawArea),
+    facts: sanitize(data.facts),
+    request: sanitize(data.request)
   };
 }
 
@@ -170,6 +247,8 @@ export async function POST(request: NextRequest) {
       email: payload.email,
       phone: payload.phone,
       subject: payload.subject,
+      court: payload.court,
+      lawArea: payload.lawArea,
       timestamp: new Date().toISOString()
     });
 

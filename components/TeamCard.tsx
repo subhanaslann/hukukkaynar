@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import TeamModal from './TeamModal';
+import type { TeamDetailMember } from '@/components/team/TeamDetail';
 
 export interface TeamMember {
   name: string;
@@ -22,6 +23,16 @@ export default function TeamCard({ member }: TeamCardProps) {
   const tCard = useTranslations('team.card');
   const tCommon = useTranslations('common');
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const modalMember: TeamDetailMember = {
+    name: member.name,
+    title: member.title,
+    university: member.university ?? '',
+    areas: member.areas ?? [],
+    avatar: member.image ?? '',
+    bio: member.bio ?? '',
+    email: member.email
+  };
 
   return (
     <>
@@ -105,11 +116,7 @@ export default function TeamCard({ member }: TeamCardProps) {
       </div>
 
       {/* Modal */}
-      <TeamModal
-        member={member}
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+      <TeamModal member={modalMember} isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }

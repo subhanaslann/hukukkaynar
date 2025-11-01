@@ -10,7 +10,7 @@ import { SourceBadge } from '@/components/news/SourceBadge';
 import { TypeBadge } from '@/components/news/TypeBadge';
 import { formatDate, getRelativeTime } from '@/lib/formatDate';
 import { buildPageMetadata } from '@/lib/seo';
-import { localizedHref } from '@/lib/i18n/navigation';
+import { localizedHref } from '@/lib/i18n/utils';
 import { getAllNewsIds, getNewsById } from '@/lib/aktuel';
 import { SITE_URL } from '@/lib/site-config';
 import { locales, type Locale } from '@/i18n';

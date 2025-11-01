@@ -4,7 +4,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Icons } from '@/components/shared/Icons';
 import type { Locale } from '@/i18n';
-import { localizedHref } from '@/lib/i18n/navigation';
+import { localizedHref } from '@/lib/i18n/utils';
 
 export const metadata = {
   title: 'Ceza Hukuku',

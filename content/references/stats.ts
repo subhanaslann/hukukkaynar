@@ -7,9 +7,9 @@ export type ReferenceStat = {
 };
 
 export const REFERENCE_STATS: ReferenceStat[] = [
-  { id: 'cases', value: 320, suffix: '+', label: 'references.stats.cases', icon: 'gavel' },
-  { id: 'satisfaction', value: 97, suffix: '%', label: 'references.stats.satisfaction', icon: 'scale' },
-  { id: 'industries', value: 18, suffix: '+', label: 'references.stats.industries', icon: 'briefcase' },
-  { id: 'years', value: 12, suffix: '+', label: 'references.stats.years', icon: 'calendar' }
+  // Use relative i18n keys; component is namespaced with 'references.stats'
+  { id: 'cases', value: 320, suffix: '+', label: 'cases', icon: 'gavel' },
+  { id: 'satisfaction', value: 97, suffix: '%', label: 'satisfaction', icon: 'scale' },
+  { id: 'industries', value: 18, suffix: '+', label: 'industries', icon: 'briefcase' },
+  { id: 'years', value: 12, suffix: '+', label: 'years', icon: 'calendar' }
 ];
-

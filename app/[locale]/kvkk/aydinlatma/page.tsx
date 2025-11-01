@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Section from '@/components/Section';
 import { SITE_URL } from '@/lib/constants';
 import type { Locale } from '@/i18n';
-import { localizedHref } from '@/lib/i18n/navigation';
+import { localizedHref } from '@/lib/i18n/utils';
 
 interface PageProps {
   params: { locale: Locale };

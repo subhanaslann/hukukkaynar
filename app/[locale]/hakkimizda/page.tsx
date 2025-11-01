@@ -47,7 +47,7 @@ export default async function AboutPage({ params }: PageProps) {
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-[hsl(var(--gold))]/30 shadow-xl">
                 <Image
-                  src="/office.jpg"
+                  src="/hero.jpg"
                   alt={tAbout('imageAlt')}
                   fill
                   className="object-cover"

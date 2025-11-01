@@ -22,7 +22,7 @@ export function About() {
         <div className="order-2 lg:order-1">
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg border gold-line shadow-lg">
             <Image
-              src="/office.jpg"
+              src="/hero.jpg"
               alt={t('imageAlt')}
               fill
               className="object-cover"

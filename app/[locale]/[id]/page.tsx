@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation';
 import { getNewsById, getAllNewsIds } from '@/lib/aktuel';
 import { buildPageMetadata } from '@/lib/seo';
-import { localizedHref } from '@/lib/i18n/navigation';
+import { localizedHref } from '@/lib/i18n/utils';
 import { locales, type Locale } from '@/i18n';
 
 export const dynamic = 'force-static';

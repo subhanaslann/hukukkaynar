@@ -166,7 +166,7 @@
       },
       "competition": {
         "title": "Rekabet Hukuku",
-        "description": "Haksız rekabet, dağıtım sözleşmeleri ve uyum danışmanlığı."
+        "description": "Birleşme ve devralmalar; rekabet ihlallerine ilişkin idari para cezaları."
       }
     }
   },
@@ -1264,6 +1264,42 @@
         {
           "question": "Yabancılar Türkiye'de tapu edinebilir mi?",
           "answer": "Karşılıklılık ilkesi ve kanuni sınırlamalar çerçevesinde yabancılar Türkiye'de taşınmaz edinebilir. Askeri bölgeler ve özel güvenlik bölgelerinde kısıtlamalar vardır."
+        }
+      ]
+    },
+    "competition": {
+      "name": "Rekabet Hukuku",
+      "tagline": "Uyum, birleşme-devralmalar ve soruşturma süreçleri",
+      "meta": {
+        "title": "Rekabet Hukuku",
+        "description": "Dikey anlaşmalar ve pazar davranışlarında uyum; birleşme-devralma bildirimleri ve rekabet soruşturmalarında etkin savunma."
+      },
+      "description": [
+        "Pazar davranışlarının ve sözleşmelerin rekabet hukukuna uygunluğu kurumsal risk yönetiminin temel bir parçasıdır.",
+        "Uyum programı tasarımı, sözleşme denetimi, birleşme-devralma bildirimleri ve soruşturma süreçlerinde uçtan uca hukuki destek sunuyoruz."
+      ],
+      "scope": [
+        "Rekabet hukuku uyum programlarının hazırlanması ve uygulanması",
+        "Dikey anlaşmalar (dağıtım/bayilik) ve münhasırlık hükümlerinin incelenmesi",
+        "Yeniden satış fiyatının belirlenmesi (RPM) risklerinin değerlendirilmesi",
+        "Birleşme ve devralmalar (yoğunlaşmalar) ve bildirim süreçleri",
+        "Rekabet ihlalinden kaynaklanan idari para cezalarına karşı savunma ve süreç yönetimi"
+      ],
+      "process": [
+        { "title": "Ön Değerlendirme", "description": "Sektör ve sözleşme setinin risk analizinin yapılması" },
+        { "title": "Uyum Analizi", "description": "Politika ve prosedürlerin mevzuata uyum açısından gözden geçirilmesi" },
+        { "title": "Sözleşme İncelemesi", "description": "Dikey sınırlamalar ve hassas hükümler için tarama" },
+        { "title": "Süreç Yönetimi", "description": "Eğitim, iç denetim ve soruşturma desteği" },
+        { "title": "Raporlama", "description": "İyileştirme önerileri ve yol haritası" }
+      ],
+      "faqs": [
+        {
+          "question": "Hangi sözleşmeler rekabet riski taşır?",
+          "answer": "Dağıtım/bayilik sözleşmeleri, münhasırlık ve yeniden satış fiyatının belirlenmesi (RPM) gibi hükümler risk doğurabilir; her dosya özelinde analiz gerekir."
+        },
+        {
+          "question": "Birleşme-devralma bildirimi ne zaman zorunludur?",
+          "answer": "Ciro eşiklerinin aşıldığı yoğunlaşma işlemlerinde Kurum'a bildirim gerekir. İşlem yapısı ve taraf ciroları dikkate alınarak ön değerlendirme yapılmalıdır."
         }
       ]
     }

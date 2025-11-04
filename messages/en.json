@@ -1266,6 +1266,42 @@
           "answer": "It raises awareness, standardises processes and reduces infringement risks through training, policies and audits."
         }
       ]
+    },
+    "competition": {
+      "name": "Competition Law",
+      "tagline": "Compliance, merger control and investigations",
+      "meta": {
+        "title": "Competition Law",
+        "description": "Compliance for vertical agreements and market conduct; merger-control notifications and effective defense in investigations."
+      },
+      "description": [
+        "Ensuring that market conduct and agreements comply with competition law is a core element of corporate risk management.",
+        "We provide end-to-end support on compliance programmes, contract reviews, merger-control notifications and investigations."
+      ],
+      "scope": [
+        "Design and implementation of competition compliance programmes",
+        "Review of vertical agreements (distribution/dealership) and exclusivity",
+        "Assessment of resale price maintenance (RPM) risks",
+        "Mergers and acquisitions (concentrations) and merger-control notifications",
+        "Defense and case management against administrative fines arising from competition infringements"
+      ],
+      "process": [
+        { "title": "Pre‑assessment", "description": "Risk analysis of the sector and contract set" },
+        { "title": "Compliance Review", "description": "Review of policies and procedures for legal alignment" },
+        { "title": "Contract Screening", "description": "Scanning vertical restraints and sensitive clauses" },
+        { "title": "Process Management", "description": "Training, internal audits and investigation support" },
+        { "title": "Reporting", "description": "Recommendations and roadmap" }
+      ],
+      "faqs": [
+        {
+          "question": "Which agreements are risky under competition law?",
+          "answer": "Distribution/dealership agreements, exclusivity and resale price maintenance may pose risks; a case‑by‑case assessment is required."
+        },
+        {
+          "question": "When is a merger‑control filing required?",
+          "answer": "Where turnover thresholds are exceeded in concentrations, a filing with the Authority is required. The structure of the transaction and parties' turnovers must be assessed in advance."
+        }
+      ]
     }
   }
 }

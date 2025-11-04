@@ -39,6 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPaths: PathConfig[] = [
     { path: '/' },
     { path: '/hakkimizda' },
+    { path: '/arsiv' },
     { path: '/calisma-alanlari' },
     { path: '/ekibimiz' },
     { path: '/aktuel' },

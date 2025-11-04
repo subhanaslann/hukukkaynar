@@ -11,16 +11,16 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function Textare
 ) {
   return (
     <div className="flex flex-col gap-2">
-      <label htmlFor={id} className="text-sm font-medium text-primary-800">
+      <label htmlFor={id} className="text-sm font-medium text-[hsl(var(--muted))]">
         {label}
       </label>
       <textarea
         id={id}
         ref={ref}
-        className={`w-full min-h-[160px] rounded-md border border-primary-200 bg-white px-3 py-2 text-primary-900 shadow-sm focus:border-primary-500 ${className}`}
+        className={`w-full min-h-[160px] rounded-md border border-[hsl(var(--border))] bg-[hsl(var(--card))] px-3 py-2 text-[hsl(var(--fg))] shadow-sm placeholder:text-[hsl(var(--muted))] focus:border-[hsl(var(--gold))] ${className}`}
         {...rest}
       />
-      {error && <p className="text-xs text-red-600">{error}</p>}
+      {error && <p className="text-xs text-[hsl(var(--gold))]">{error}</p>}
     </div>
   );
 });

@@ -5,14 +5,15 @@ import { Topbar } from '@/components/layout/Topbar';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Icons } from '@/components/shared/Icons';
-import { PetitionContact } from '@/components/contact/PetitionContact';
+import ContactForm from '@/components/contact/ContactForm';
 import { type Locale } from '@/i18n';
+import { MAP_EMBED_URL } from '@/lib/site-config';
 
 export default function IletisimPage() {
   const locale = useLocale() as Locale;
   const t = useTranslations('contact');
 
-  const mapUrl = process.env.NEXT_PUBLIC_MAP_EMBED_URL || '';
+  const mapUrl = MAP_EMBED_URL;
   const whatsappNumber = t('phoneNumber');
   const whatsappMessage = 'Merhaba, hukuki destek almak istiyorum.';
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -35,7 +36,7 @@ export default function IletisimPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Contact Form */}
             <div className="order-2 space-y-6 lg:order-1">
-              <PetitionContact variant="page" locale={locale} />
+              <ContactForm locale={locale} />
               <p className="text-xs text-muted">{t('note')}</p>
               <p className="text-xs text-muted">{t('disclaimer')}</p>
             </div>

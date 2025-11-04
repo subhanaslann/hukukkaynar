@@ -25,7 +25,7 @@ export function TeamCardMini({ member }: TeamCardMiniProps) {
   const modalPayload = useMemo<TeamDetailMember>(
     () => ({
       name: member.name,
-      title: tCard('role'),
+      title: (member as any).title ?? tCard('role'),
       university: member.university,
       areas,
       bio: member.bio,
@@ -63,7 +63,7 @@ export function TeamCardMini({ member }: TeamCardMiniProps) {
 
           <h3 className="text-lg font-serif font-bold text-[hsl(var(--fg))]">{member.name}</h3>
           <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-[hsl(var(--gold))]">
-            {tCard('role')}
+            {(member as any).title ?? tCard('role')}
           </p>
           {member.university && (
             <p className="mt-1 text-xs text-[hsl(var(--muted))]">{member.university}</p>

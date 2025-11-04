@@ -103,7 +103,13 @@ export function TeamDetail({ member, variant = 'page' }: TeamDetailProps) {
 
           {member.bio && (
             <section className="space-y-3">
-              <p className="text-base leading-relaxed text-[hsl(var(--muted))]">{member.bio}</p>
+              {member.bio
+                .split(/\n{2,}/)
+                .map((paragraph, idx) => (
+                  <p key={idx} className="text-base leading-relaxed text-[hsl(var(--muted))]">
+                    {paragraph}
+                  </p>
+                ))}
             </section>
           )}
 

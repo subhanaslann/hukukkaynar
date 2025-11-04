@@ -6,6 +6,7 @@
     "references": "References",
     "news": "News",
     "articles": "Articles",
+    "archive": "Archive",
     "contact": "Contact",
     "appointment": "Book Appointment",
     "menuToggle": "Toggle menu",
@@ -125,6 +126,10 @@
       "international": {
         "title": "Foreigners & Arbitration Law",
         "description": "Counsel on international disputes, arbitration and cross-border investments."
+      },
+      "competition": {
+        "title": "Competition Law",
+        "description": "Unfair competition, distribution agreements and compliance advisory."
       }
     }
   },
@@ -210,6 +215,7 @@
       "button": "Contact Us"
     }
   },
+  
   "contact": {
     "label": "Contact",
     "title": "Get in touch with us",
@@ -265,10 +271,10 @@
       "whatsapp": "Contact via WhatsApp",
       "whatsappDesc": "Click for quick support"
     },
-    "addressText": "Sample Street, Law Avenue No:12",
-    "cityText": "Kadıköy, Istanbul 34710",
-    "phoneNumber": "+90 555 123 45 67",
-    "emailAddress": "info@kaynar.com",
+    "addressText": "Merkezefendi Mah. Mevlana Cad. A-8 Blok Kat:11 Daire:47",
+    "cityText": "34040 Istanbul",
+    "phoneNumber": "+905369495345",
+    "emailAddress": "contact@kaynarhukuk.com",
     "note": "Your message is handled confidentially; this communication does not establish an attorney-client relationship.",
     "disclaimer": "The content on this website is for general information purposes and is not legal advice.",
     "cityShort": "Istanbul, Türkiye",
@@ -456,6 +462,16 @@
       ],
       "disclaimer": "The content on this page is for general information purposes and does not constitute legal advice."
     },
+    "archive": {
+      "metaTitle": "Photo Archive",
+      "metaDescription": "Kaynar Law Firm photo archive.",
+      "title": "Archive",
+      "subtitle": "Browse photos from our office.",
+      "images": {
+        "buro1Alt": "A view from the office (1)",
+        "buro2Alt": "A view from the office (2)"
+      }
+    },
     "articles": {
       "metadata": {
         "title": "Articles",
@@ -529,7 +545,7 @@
           {
             "title": "1. Data Controller",
             "body": [
-              "Data controller: Kaynar Law Firm. Contact: info@kaynar.av.tr, +90-___-___-____. Address: ___ Mah., ___ Sk. No: __, ___ / ___."
+              "Data controller: Kaynar Law Firm. Contact: contact@kaynarhukuk.com, +905369495345. Address: Merkezefendi Mah. Mevlana Cad. A-8 Blok Kat:11 Daire:47, 34040 Istanbul."
             ]
           },
           {
@@ -634,7 +650,7 @@
               "In-person applications with a wet-ink signature",
               "Applications sent via notary",
               "Applications submitted through a Registered Electronic Mail (KEP) address with secure electronic signature",
-              "Scanning the signed application and sending it with secure electronic signature to info@kaynar.av.tr"
+              "Scanning the signed application and sending it with secure electronic signature to contact@kaynarhukuk.com"
             ]
           },
           {
@@ -1211,6 +1227,43 @@
         {
           "question": "May foreigners acquire real estate in Türkiye?",
           "answer": "Foreigners may acquire property subject to reciprocity and statutory limitations. Restrictions apply in military and special-security zones."
+        }
+      ]
+    },
+    "competition": {
+      "name": "Competition Law",
+      "tagline": "Unfair competition, compliance and investigations",
+      "meta": {
+        "title": "Competition Law",
+        "description": "Compliance for vertical agreements and distribution; defense and process management in investigations before the Competition Authority."
+      },
+      "description": [
+        "Compliance of market conduct and agreements with competition law is critical.",
+        "We provide compliance programs, contract reviews and support throughout investigations."
+      ],
+      "scope": [
+        "Unfair competition actions and interim measures",
+        "Design and implementation of competition compliance programs",
+        "Review of vertical agreements, distribution and dealership contracts",
+        "Merger control assessments and concentration notifications",
+        "Dawn raids and defense before the Competition Authority",
+        "Internal audits, trainings and reporting"
+      ],
+      "process": [
+        { "title": "Pre-assessment", "description": "Risk analysis of sector and contract set" },
+        { "title": "Compliance Review", "description": "Policy design and alignment with legislation" },
+        { "title": "Contract Review", "description": "Screening vertical restraints and sensitive clauses" },
+        { "title": "Process Management", "description": "Training, internal audits and investigation support" },
+        { "title": "Reporting", "description": "Recommendations and roadmap" }
+      ],
+      "faqs": [
+        {
+          "question": "Which agreements are risky under competition law?",
+          "answer": "Vertical restraints (distribution, dealership), exclusivity and resale price maintenance may pose risks. A case-by-case analysis is required."
+        },
+        {
+          "question": "What does a compliance program provide?",
+          "answer": "It raises awareness, standardises processes and reduces infringement risks through training, policies and audits."
         }
       ]
     }

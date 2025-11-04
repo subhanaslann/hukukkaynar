@@ -30,8 +30,8 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Kaynar Hukuk Bürosu | Ceza, Aile, İş ve Ticaret Hukuku',
-    template: '%s | Kaynar Hukuk Bürosu'
+    default: 'Kaynar Hukuk & Danışmanlık • Arabuluculuk',
+    template: '%s | Kaynar Hukuk & Danışmanlık • Arabuluculuk'
   },
   description:
     'Ceza, aile, iş ve ticaret hukukunda uçtan uca temsil. Dürüst danışmanlık, disiplinli takip. Hızlı ilk değerlendirme ve şeffaf süreç.',
@@ -47,28 +47,28 @@ export const metadata: Metadata = {
     'lawyer',
     'attorney'
   ],
-  authors: [{ name: 'Kaynar Hukuk Bürosu' }],
-  creator: 'Kaynar Hukuk Bürosu',
+  authors: [{ name: 'Kaynar Hukuk & Danışmanlık' }],
+  creator: 'Kaynar Hukuk & Danışmanlık',
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
     url: SITE_URL,
-    siteName: 'Kaynar Hukuk Bürosu',
-    title: 'Kaynar Hukuk Bürosu | Ceza, Aile, İş ve Ticaret Hukuku',
+    siteName: 'Kaynar Hukuk & Danışmanlık',
+    title: 'Kaynar Hukuk & Danışmanlık • Arabuluculuk',
     description: 'Dürüst danışmanlık. Disiplinli takip. Hızlı ilk değerlendirme ve şeffaf süreç.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kaynar Hukuk Bürosu'
+        alt: 'Kaynar Hukuk & Danışmanlık'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kaynar Hukuk Bürosu',
+    title: 'Kaynar Hukuk & Danışmanlık',
     description: 'Dürüst danışmanlık. Disiplinli takip.',
     images: ['/og-image.jpg']
   },

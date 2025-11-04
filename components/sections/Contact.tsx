@@ -3,8 +3,9 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { Section, SectionHeader } from '@/components/shared/Section';
 import { Icons } from '@/components/shared/Icons';
-import { PetitionContact } from '@/components/contact/PetitionContact';
+import ContactForm from '@/components/contact/ContactForm';
 import { type Locale } from '@/i18n';
+import { MAP_EMBED_URL } from '@/lib/site-config';
 
 export function Contact() {
   const locale = useLocale() as Locale;
@@ -12,7 +13,7 @@ export function Contact() {
 
   const phoneNumber = t('phoneNumber');
   const normalizedPhone = phoneNumber.replace(/\D/g, '');
-  const mapUrl = process.env.NEXT_PUBLIC_MAP_EMBED_URL || '';
+  const mapUrl = MAP_EMBED_URL;
   const whatsappUrl = normalizedPhone
     ? `https://wa.me/${normalizedPhone}?text=${encodeURIComponent(t('whatsappMessage'))}`
     : '#';
@@ -23,7 +24,7 @@ export function Contact() {
 
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="order-2 space-y-6 lg:order-1">
-          <PetitionContact variant="section" locale={locale} />
+          <ContactForm locale={locale} />
           <p className="text-xs text-muted">{t('note')}</p>
           <p className="text-xs text-muted">{t('disclaimer')}</p>
         </div>

@@ -53,6 +53,11 @@ export function Navbar() {
         label: t('news'),
         href: '/aktuel'
       },
+      {
+        key: 'archive',
+        label: t('archive'),
+        href: '/arsiv'
+      },
       { key: 'contact', label: t('contact'), href: '/iletisim' }
     ];
   }, [t]);

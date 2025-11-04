@@ -111,36 +111,50 @@ async function sendMail(data: ContactFormData) {
     request: data.request || '-'
   };
 
-  const textBody = [
-    '--- Dilekçe ---',
-    `Başvuru Makamı/Mahkeme: ${petitionValues.court}`,
-    `Konu: ${petitionValues.subject}`,
-    `Hukuk Alanı: ${petitionValues.lawArea}`,
-    `Olayın Özeti: ${petitionValues.facts}`,
-    `Talep/İstem: ${petitionValues.request}`,
-    '',
+  const hasPetitionData = Boolean(data.court || data.lawArea || data.facts || data.request);
+
+  const applicantLines = [
     '--- Başvuran Bilgileri ---',
     `Ad Soyad: ${data.name}`,
     `E-posta: ${data.email}`,
     `Telefon: ${data.phone}`,
-    `KVKK: ${data.kvkk ? 'Onaylandı' : 'Onaylanmadı'}`,
+    `Konu: ${petitionValues.subject}`,
+    `KVKK: ${data.kvkk ? 'Onaylandı' : 'Onaylanmadı'}`
+  ];
+
+  const textBody = [
+    ...(hasPetitionData
+      ? [
+          '--- Dilekçe ---',
+          `Başvuru Makamı/Mahkeme: ${petitionValues.court}`,
+          `Konu: ${petitionValues.subject}`,
+          `Hukuk Alanı: ${petitionValues.lawArea}`,
+          `Olayın Özeti: ${petitionValues.facts}`,
+          `Talep/İstem: ${petitionValues.request}`,
+          ''
+        ]
+      : []),
+    ...applicantLines,
     '',
     '--- Mesaj ---',
     data.message || '-'
   ].join('\n');
 
-  const htmlPetition = buildHtmlRows([
-    ['Başvuru Makamı/Mahkeme', petitionValues.court],
-    ['Konu', petitionValues.subject],
-    ['Hukuk Alanı', petitionValues.lawArea],
-    ['Olayın Özeti', petitionValues.facts],
-    ['Talep/İstem', petitionValues.request]
-  ]);
+  const htmlPetition = hasPetitionData
+    ? buildHtmlRows([
+        ['Başvuru Makamı/Mahkeme', petitionValues.court],
+        ['Konu', petitionValues.subject],
+        ['Hukuk Alanı', petitionValues.lawArea],
+        ['Olayın Özeti', petitionValues.facts],
+        ['Talep/İstem', petitionValues.request]
+      ])
+    : '';
 
   const htmlApplicant = buildHtmlRows([
     ['Ad Soyad', data.name],
     ['E-posta', data.email],
     ['Telefon', data.phone],
+    ['Konu', petitionValues.subject],
     ['KVKK', data.kvkk ? 'Onaylandı' : 'Onaylanmadı']
   ]);
 
@@ -154,11 +168,15 @@ async function sendMail(data: ContactFormData) {
     text: textBody,
     html: `
       <div>
-        <section>
-          <h2 style="font-size:16px;margin-bottom:8px;">Dilekçe</h2>
-          ${htmlPetition}
-        </section>
-        <hr style="margin:16px 0;border:none;border-top:1px solid #e5e5e5;" />
+        ${
+          hasPetitionData
+            ? `<section>
+                 <h2 style="font-size:16px;margin-bottom:8px;">Dilekçe</h2>
+                 ${htmlPetition}
+               </section>
+               <hr style="margin:16px 0;border:none;border-top:1px solid #e5e5e5;" />`
+            : ''
+        }
         <section>
           <h2 style="font-size:16px;margin-bottom:8px;">Başvuran Bilgileri</h2>
           ${htmlApplicant}

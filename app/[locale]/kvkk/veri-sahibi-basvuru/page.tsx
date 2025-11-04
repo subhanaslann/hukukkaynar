@@ -13,7 +13,7 @@ export default function VeriSahibiBasvuruPage() {
             <li>Islak imzalı dilekçe ile büromuza bizzat başvuru.</li>
             <li>Noter aracılığıyla gönderilen başvuru.</li>
             <li>Kayıtlı Elektronik Posta (KEP) adresi üzerinden güvenli elektronik imza ile başvuru.</li>
-            <li>İmzalı başvurunun taranarak info@kaynar.av.tr adresine güvenli elektronik imza ile iletilmesi.</li>
+            <li>İmzalı başvurunun taranarak contact@kaynarhukuk.com adresine güvenli elektronik imza ile iletilmesi.</li>
           </ul>
         </section>
 

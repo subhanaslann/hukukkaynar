@@ -87,7 +87,7 @@ export default async function TeamMemberPage({ params }: PageProps) {
 
   const detailMember: TeamDetailMember = {
     name: member.name,
-    title: tCard('role'),
+    title: (member as any).title ?? tCard('role'),
     university: member.university,
     areas: member.areas,
     avatar: member.avatar,
@@ -99,7 +99,7 @@ export default async function TeamMemberPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: member.name,
-    jobTitle: tCard('role'),
+    jobTitle: (member as any).title ?? tCard('role'),
     alumniOf: member.university,
     knowsAbout: normalizedAreas,
     image: member.avatar ? new URL(member.avatar, SITE_URL).toString() : undefined,

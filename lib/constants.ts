@@ -4,9 +4,9 @@ export const SITE_NAME = 'Kaynar Hukuk Bürosu';
 export { SITE_URL };
 
 export const CONTACT_INFO = {
-  phone: '+90-___-___-____',
-  email: 'info@kaynar.av.tr',
-  address: '___ Mah., ___ Sk. No: __, ___ / ___'
+  phone: '+905369495345',
+  email: 'contact@kaynarhukuk.com',
+  address: 'Merkezefendi Mah. Mevlana Cad. A-8 Blok Kat:11 Daire:47, 34040 İstanbul'
 };
 
 export const HEADER_LINKS = [

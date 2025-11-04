@@ -19,7 +19,7 @@ export default function KvkkAydinlatmaPage({ params }: PageProps) {
         <section>
           <h2 className="text-lg font-semibold text-primary-900">1. Veri Sorumlusu</h2>
           <p>
-            Veri sorumlusu: Kaynar Hukuk Bürosu. İletişim: info@kaynar.av.tr, +90-___-___-____. Adres: ___ Mah., ___ Sk. No: __, ___ / ___.
+            Veri sorumlusu: Kaynar Hukuk Bürosu. İletişim: contact@kaynarhukuk.com, +905369495345. Adres: Merkezefendi Mah. Mevlana Cad. A-8 Blok Kat:11 Daire:47, 34040 İstanbul.
           </p>
         </section>
 

@@ -6,6 +6,7 @@
     "references": "Referanslar",
     "news": "Aktüel",
     "articles": "Makaleler",
+    "archive": "Arşiv",
     "contact": "İletişim",
     "appointment": "Randevu Al",
     "menuToggle": "Menüyü aç/kapat",
@@ -42,6 +43,43 @@
         "title": "Mevzuata Uyum",
         "description": "Meslek kurallarına ve hukuk normlarına tam uyum gösteririz."
       }
+    },
+    "competition": {
+      "name": "Rekabet Hukuku",
+      "tagline": "Haksız rekabet, uyum ve soruşturma süreçleri",
+      "meta": {
+        "title": "Rekabet Hukuku",
+        "description": "Haksız rekabet, dağıtım ve dikey anlaşmalarda uyum; Rekabet Kurumu soruşturmalarında savunma ve süreç yönetimi."
+      },
+      "description": [
+        "Pazar davranışlarının ve sözleşmelerin rekabet hukukuna uygunluğu kritik önemdedir.",
+        "Uyum programları, sözleşme denetimi ve soruşturma süreçlerinde hukuki destek sağlıyoruz."
+      ],
+      "scope": [
+        "Haksız rekabet davaları ve ihtiyati tedbir başvuruları",
+        "Rekabet hukuku uyum programlarının oluşturulması ve uygulanması",
+        "Dikey anlaşmalar, dağıtım ve bayilik sözleşmelerinin incelenmesi",
+        "Birleşme-devralma işlemleri ve yoğunlaşma bildirimlerinin değerlendirilmesi",
+        "Rekabet Kurumu yerinde incelemeleri ve savunma süreçleri",
+        "İç denetim, eğitim ve raporlama"
+      ],
+      "process": [
+        { "title": "Ön Değerlendirme", "description": "Sektör ve sözleşme setinin risk analizi" },
+        { "title": "Uyum Analizi", "description": "Mevzuata uygunluk ve politika oluşturma" },
+        { "title": "Sözleşme İncelemesi", "description": "Dikey anlaşmalar ve rekabet hassas hükümlerinin gözden geçirilmesi" },
+        { "title": "Süreç Yönetimi", "description": "Kurumsal eğitim, iç denetim ve soruşturma desteği" },
+        { "title": "Raporlama", "description": "İyileştirme önerileri ve yol haritası" }
+      ],
+      "faqs": [
+        {
+          "question": "Hangi sözleşmeler rekabet riski taşır?",
+          "answer": "Dikey anlaşmalar (dağıtım, bayilik), münhasırlık, yeniden satış fiyatının belirlenmesi gibi hükümler risk doğurabilir. Dosya özelinde analiz gerekir."
+        },
+        {
+          "question": "Uyum programı ne sağlar?",
+          "answer": "Çalışanların farkındalığını artırır, süreçleri standartlaştırır ve ihlal riskini azaltır. Eğitim, politika ve denetim bileşenlerinden oluşur."
+        }
+      ]
     },
     "imageAlt": "Kaynar Hukuk Ofisi",
     "pageHeading": "Hukuki süreçlerinizi güvenle yönetiyoruz",
@@ -125,6 +163,10 @@
       "international": {
         "title": "Yabancılar ve Tahkim Hukuku",
         "description": "Uluslararası uyuşmazlıklar, tahkim ve yabancı yatırım danışmanlığı."
+      },
+      "competition": {
+        "title": "Rekabet Hukuku",
+        "description": "Haksız rekabet, dağıtım sözleşmeleri ve uyum danışmanlığı."
       }
     }
   },
@@ -210,6 +252,7 @@
       "button": "İletişim Kurun"
     }
   },
+  
   "contact": {
     "label": "İletişim",
     "title": "Bizimle iletişime geçin",
@@ -265,10 +308,10 @@
       "whatsapp": "WhatsApp ile İletişim",
       "whatsappDesc": "Hızlı destek için tıklayın"
     },
-    "addressText": "Örnek Mahallesi, Hukuk Sokak No:12",
-    "cityText": "Kadıköy, İstanbul 34710",
-    "phoneNumber": "+90 555 123 45 67",
-    "emailAddress": "info@kaynar.com",
+    "addressText": "Merkezefendi Mah. Mevlana Cad. A-8 Blok Kat:11 Daire:47",
+    "cityText": "34040 İstanbul",
+    "phoneNumber": "+905369495345",
+    "emailAddress": "contact@kaynarhukuk.com",
     "note": "Mesajınız gizlilikle ele alınır; bu iletişim avukat-müvekkil ilişkisi kurmaz.",
     "disclaimer": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir.",
     "cityShort": "İstanbul, Türkiye",
@@ -456,6 +499,16 @@
       ],
       "disclaimer": "Bu internet sitesindeki içerikler genel nitelikte bilgilendirme amacı taşır; hukuki danışmanlık değildir."
     },
+    "archive": {
+      "metaTitle": "Fotoğraf Arşivi",
+      "metaDescription": "Kaynar Hukuk Bürosu fotoğraf arşivi.",
+      "title": "Arşiv",
+      "subtitle": "Büromuzdan kareleri bu sayfada bulabilirsiniz.",
+      "images": {
+        "buro1Alt": "Bürodan bir kare (1)",
+        "buro2Alt": "Bürodan bir kare (2)"
+      }
+    },
     "articles": {
       "metadata": {
         "title": "Makaleler",
@@ -529,7 +582,7 @@
           {
             "title": "1. Veri Sorumlusu",
             "body": [
-              "Veri sorumlusu: Kaynar Hukuk Bürosu. İletişim: info@kaynar.av.tr, +90-___-___-____. Adres: ___ Mah., ___ Sk. No: __, ___ / ___."
+              "Veri sorumlusu: Kaynar Hukuk Bürosu. İletişim: contact@kaynarhukuk.com, +905369495345. Adres: Merkezefendi Mah. Mevlana Cad. A-8 Blok Kat:11 Daire:47, 34040 İstanbul."
             ]
           },
           {
@@ -634,7 +687,7 @@
               "Islak imzalı dilekçe ile büromuza bizzat başvuru",
               "Noter aracılığıyla gönderilen başvuru",
               "Kayıtlı Elektronik Posta (KEP) adresi üzerinden güvenli elektronik imza ile başvuru",
-              "İmzalı başvurunun taranarak info@kaynar.av.tr adresine güvenli elektronik imza ile iletilmesi"
+              "İmzalı başvurunun taranarak contact@kaynarhukuk.com adresine güvenli elektronik imza ile iletilmesi"
             ]
           },
           {
